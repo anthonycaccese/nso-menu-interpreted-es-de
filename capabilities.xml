@@ -1,0 +1,34 @@
+<themeCapabilities>
+   
+   <themeName>NSO Menu (Interpreted)</themeName>
+
+   <colorScheme name="profile-link">
+      <label>Link Avatar</label>
+   </colorScheme>
+   <colorScheme name="profile-zelda">
+      <label>Zelda Avatar</label>
+   </colorScheme>
+   <colorScheme name="profile-es-de">
+      <label>ES-DE Avatar</label>
+   </colorScheme>
+   <colorScheme name="profile-custom">
+      <label>Custom Avatar</label>
+   </colorScheme>
+
+   <transitions name="transitions">
+      <label>transitions</label>
+      <selectable>false</selectable>
+      <systemToSystem>slide</systemToSystem>
+      <systemToGamelist>slide</systemToGamelist>
+      <gamelistToGamelist>slide</gamelistToGamelist>
+      <gamelistToSystem>slide</gamelistToSystem>
+      <startupToSystem>slide</startupToSystem>
+      <startupToGamelist>slide</startupToGamelist>
+   </transitions>
+   <suppressTransitionProfiles>
+      <entry>builtin-instant</entry>
+      <entry>builtin-slide</entry>
+      <entry>builtin-fade</entry>
+   </suppressTransitionProfiles>
+
+</themeCapabilities>

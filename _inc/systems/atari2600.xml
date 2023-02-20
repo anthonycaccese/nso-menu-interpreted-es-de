@@ -1,0 +1,15 @@
+<theme>
+   <view name="system">
+      <image name="background">
+         <color>1E6547</color>
+      </image>
+   </view>
+   <view name="gamelist">
+      <grid name="grid">
+         <imageFit>cover</imageFit>
+         <imageType>cover,screenshot</imageType>
+         <imageRelativeScale>1</imageRelativeScale>
+         <itemSize>0.2 0.5</itemSize><!-- ATARI2600 256 360 -->
+      </grid>
+   </view>
+</theme>

@@ -1,0 +1,15 @@
+<theme>
+   <view name="system">
+      <image name="background">
+         <color>BD5E38</color>
+      </image>
+   </view>
+   <view name="gamelist">
+      <grid name="grid">
+         <imageFit>cover</imageFit>
+         <imageType>cover,screenshot</imageType>
+         <imageRelativeScale>1</imageRelativeScale>
+         <itemSize>0.2 0.468055555555556</itemSize><!-- TG16 256 337 -->
+      </grid>
+   </view>
+</theme>

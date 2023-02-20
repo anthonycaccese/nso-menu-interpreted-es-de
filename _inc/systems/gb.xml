@@ -1,0 +1,15 @@
+<theme>
+   <view name="system">
+      <image name="background">
+         <color>0f380f</color>
+      </image>
+   </view>
+   <view name="gamelist">
+      <grid name="grid">
+         <imageFit>cover</imageFit>
+         <imageType>cover,screenshot</imageType>
+         <imageRelativeScale>1</imageRelativeScale>
+         <itemSize>0.2 0.355555555555556</itemSize><!-- GB 256 256 -->
+      </grid>
+   </view>
+</theme>
