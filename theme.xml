@@ -207,7 +207,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </grid>
    </view>
 
-   <include>./_inc/systems/default.xml</include>
+   <include>./_inc/systems/_default.xml</include>
    <include>./_inc/systems/${system.theme}.xml</include>
 
 </theme>
