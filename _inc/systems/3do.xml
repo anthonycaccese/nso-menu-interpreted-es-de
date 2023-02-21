@@ -1,0 +1,26 @@
+<theme>
+   <view name="system">
+      <image name="background">
+         <color>111111</color>
+      </image>
+   </view>
+   <view name="gamelist">
+      <grid name="grid">
+         <imageType>cover,screenshot</imageType>
+      </grid>
+   </view>
+   <aspectRatio name="16:9">
+      <view name="gamelist">
+         <grid name="grid">
+            <itemSize>0.2 0.683333333333333</itemSize><!-- 256 492 -->
+         </grid>
+      </view>
+   </aspectRatio>
+   <aspectRatio name="16:10">
+      <view name="gamelist">
+         <grid name="grid">
+            <itemSize>0.25 0.768055555555556</itemSize><!-- 288 553 -->
+         </grid>
+      </view>
+   </aspectRatio>
+</theme>
