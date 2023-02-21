@@ -197,6 +197,8 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <fontSize>0.03</fontSize>
          <selectorImage>./_inc/images/grid-selector.svg</selectorImage>
          <selectorColor>ffffffaa</selectorColor>
+         <imageFit>cover</imageFit>
+         <imageRelativeScale>1</imageRelativeScale>
       </grid>
    </view>
 
@@ -267,7 +269,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
             <pos>0.052083333333333 0.022</pos>
          </text>
          <text name="custom-collection-name">
-            <pos>0.102 0.022</pos>
+            <pos>0.113333333333333 0.022</pos>
          </text>
          <text name="game-name">
             <pos>0.052083333333333 0.047</pos>

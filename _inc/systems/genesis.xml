@@ -6,10 +6,21 @@
    </view>
    <view name="gamelist">
       <grid name="grid">
-         <imageFit>cover</imageFit>
          <imageType>cover,screenshot</imageType>
-         <imageRelativeScale>1</imageRelativeScale>
-         <itemSize>0.2 0.5</itemSize><!-- GENESIS 256 360 -->
       </grid>
    </view>
+   <aspectRatio name="16:9">
+      <view name="gamelist">
+         <grid name="grid">
+            <itemSize>0.2 0.5</itemSize><!-- 256 360 -->
+         </grid>
+      </view>
+   </aspectRatio>
+   <aspectRatio name="16:10">
+      <view name="gamelist">
+         <grid name="grid">
+            <itemSize>0.25 0.5625</itemSize><!-- 288 405 -->
+         </grid>
+      </view>
+   </aspectRatio>
 </theme>
