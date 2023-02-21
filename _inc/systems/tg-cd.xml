@@ -1,7 +1,7 @@
 <theme>
    <view name="system">
       <image name="background">
-         <color>514689</color>
+         <color>BD5E38</color>
       </image>
    </view>
    <view name="gamelist">
@@ -12,14 +12,14 @@
    <aspectRatio name="16:9">
       <view name="gamelist">
          <grid name="grid">
-            <itemSize>0.25 0.327777777777778</itemSize><!-- 320 236 -->
+            <itemSize>0.2 0.468055555555556</itemSize><!-- 256 337 -->
          </grid>
       </view>
    </aspectRatio>
    <aspectRatio name="16:10">
       <view name="gamelist">
          <grid name="grid">
-            <itemSize>0.333333333333333 0.393055555555556</itemSize><!-- 384 283 -->
+            <itemSize>0.25 0.526388888888889</itemSize><!-- 288 379 -->
          </grid>
       </view>
    </aspectRatio>
