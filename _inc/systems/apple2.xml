@@ -19,6 +19,7 @@
    <aspectRatio name="16:10">
       <view name="gamelist">
          <grid name="grid">
+            <itemSize>0.25 0.570833333333333</itemSize><!-- 288 411 -->
          </grid>
       </view>
    </aspectRatio>
