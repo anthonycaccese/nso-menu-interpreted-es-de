@@ -38,8 +38,16 @@
       <label>Controllers</label>
       <selectable>true</selectable>
    </variant>
-   <variant name="system-view-logos">
-      <label>Logos</label>
+   <variant name="system-view-logos-bw">
+      <label>Logos (B/W)</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="system-view-logos-color">
+      <label>Logos (Color)</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="system-view-colorful">
+      <label>Colorful</label>
       <selectable>true</selectable>
    </variant>
 

@@ -144,14 +144,28 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    <variant name="system-view-controllers">
       <view name="system">
          <carousel name="carousel">
-            <staticImage>./_inc/systems/${system.theme}.png</staticImage>
+            <staticImage>./_inc/systems/controllers/${system.theme}.png</staticImage>
          </carousel>
       </view>
    </variant>
-   <variant name="system-view-logos">
+   <variant name="system-view-logos-bw">
       <view name="system">
          <carousel name="carousel">
-            <staticImage>./_inc/systems/${system.theme}.svg</staticImage>
+            <staticImage>./_inc/systems/logos-bw/${system.theme}.svg</staticImage>
+         </carousel>
+      </view>
+   </variant>
+   <variant name="system-view-logos-color">
+      <view name="system">
+         <carousel name="carousel">
+            <staticImage>./_inc/systems/logos-color/${system.theme}.svg</staticImage>
+         </carousel>
+      </view>
+   </variant>
+   <variant name="system-view-colorful">
+      <view name="system">
+         <carousel name="carousel">
+            <staticImage>./_inc/systems/colorful/${system.theme}.png</staticImage>
          </carousel>
       </view>
    </variant>
