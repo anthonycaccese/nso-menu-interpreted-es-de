@@ -34,4 +34,13 @@
       <entry>builtin-fade</entry>
    </suppressTransitionProfiles>
 
+   <variant name="system-view-controllers">
+      <label>Controllers</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="system-view-logos">
+      <label>Logos</label>
+      <selectable>true</selectable>
+   </variant>
+
 </themeCapabilities>

@@ -97,7 +97,6 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <pos>0 0</pos>
          <size>1 1</size>
          <color>00000000</color>
-         <staticImage>./_inc/systems/${system.theme}.png</staticImage>
          <itemScale>1</itemScale>
          <itemTransitions>animate</itemTransitions>
          <maxItemCount>1</maxItemCount>
@@ -141,6 +140,21 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <origin>1 1</origin>
       </helpsystem>
    </view>
+
+   <variant name="system-view-controllers">
+      <view name="system">
+         <carousel name="carousel">
+            <staticImage>./_inc/systems/${system.theme}.png</staticImage>
+         </carousel>
+      </view>
+   </variant>
+   <variant name="system-view-logos">
+      <view name="system">
+         <carousel name="carousel">
+            <staticImage>./_inc/systems/${system.theme}.svg</staticImage>
+         </carousel>
+      </view>
+   </variant>
 
    <view name="gamelist">
       <image name="background">
