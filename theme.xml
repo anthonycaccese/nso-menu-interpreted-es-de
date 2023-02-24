@@ -311,4 +311,12 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    <include>./_inc/systems/_default.xml</include>
    <include>./_inc/systems/${system.theme}.xml</include>
 
+   <variant name="system-view-logos-color">
+      <view name="system">
+         <image name="background">
+            <color>aaaaaa</color>
+         </image>
+      </view>
+   </variant>
+
 </theme>
