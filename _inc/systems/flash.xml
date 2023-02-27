@@ -1,7 +1,7 @@
 <theme>
    <view name="system">
       <image name="background">
-         <color>490000</color>
+         <color>B92E34</color>
       </image>
    </view>
    <view name="gamelist">

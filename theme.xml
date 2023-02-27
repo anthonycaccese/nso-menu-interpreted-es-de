@@ -166,6 +166,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       <view name="system">
          <carousel name="carousel">
             <staticImage>./_inc/systems/colorful/${system.theme}.png</staticImage>
+            <itemScale>1.5</itemScale>
          </carousel>
       </view>
    </variant>
