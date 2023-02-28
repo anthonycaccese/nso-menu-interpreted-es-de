@@ -97,7 +97,6 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <pos>0 0</pos>
          <size>1 1</size>
          <color>00000000</color>
-         <staticImage>./_inc/systems/${system.theme}.png</staticImage>
          <itemScale>1</itemScale>
          <itemTransitions>animate</itemTransitions>
          <maxItemCount>1</maxItemCount>
@@ -141,6 +140,36 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <origin>1 1</origin>
       </helpsystem>
    </view>
+
+   <variant name="system-view-controllers">
+      <view name="system">
+         <carousel name="carousel">
+            <staticImage>./_inc/systems/controllers/${system.theme}.png</staticImage>
+         </carousel>
+      </view>
+   </variant>
+   <variant name="system-view-logos-bw">
+      <view name="system">
+         <carousel name="carousel">
+            <staticImage>./_inc/systems/logos-bw/${system.theme}.svg</staticImage>
+         </carousel>
+      </view>
+   </variant>
+   <variant name="system-view-logos-color">
+      <view name="system">
+         <carousel name="carousel">
+            <staticImage>./_inc/systems/logos-color/${system.theme}.svg</staticImage>
+         </carousel>
+      </view>
+   </variant>
+   <variant name="system-view-colorful">
+      <view name="system">
+         <carousel name="carousel">
+            <staticImage>./_inc/systems/colorful/${system.theme}.png</staticImage>
+            <itemScale>1.5</itemScale>
+         </carousel>
+      </view>
+   </variant>
 
    <view name="gamelist">
       <image name="background">
@@ -282,5 +311,13 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
 
    <include>./_inc/systems/_default.xml</include>
    <include>./_inc/systems/${system.theme}.xml</include>
+
+   <variant name="system-view-logos-color">
+      <view name="system">
+         <image name="background">
+            <color>aaaaaa</color>
+         </image>
+      </view>
+   </variant>
 
 </theme>
