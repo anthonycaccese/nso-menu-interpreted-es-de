@@ -67,7 +67,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </image>
       <text name="menu-title,menu-title-system,menu-title-auto-collection,menu-title-custom-collection,custom-collection-name">
          <fontSize>0.016</fontSize>
-         <fontPath>${fontBold}</fontPath>
+         <fontPath>${fontRegular}</fontPath>
          <lineSpacing>1</lineSpacing>
       </text>
       <helpsystem name="help">
@@ -119,12 +119,12 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       <text name="menu-title">
          <origin>0 1</origin>
          <text>EmulationStation-DE</text>
-         <color>ffffff</color>
+         <color>777777</color>
       </text>
       <text name="menu-title-system,menu-title-auto-collection,menu-title-custom-collection">
          <origin>0 1</origin>
-         <fontPath>${fontRegular}</fontPath>
-         <color>777777</color>
+         <fontPath>${fontBold}</fontPath>
+         <color>ffffff</color>
       </text>
       <text name="menu-title-system">
          <text>${system.fullName.noCollections}</text>
