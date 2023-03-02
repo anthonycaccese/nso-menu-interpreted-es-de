@@ -65,7 +65,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <path>./_inc/images/avatar-mask.svg</path>
          <zIndex>4</zIndex>
       </image>
-      <text name="menu-title,menu-title-system,menu-title-auto-collection,menu-title-custom-collection,custom-collection-name">
+      <text name="menu-title-system,menu-title-auto-collection,menu-title-custom-collection,custom-collection-name,game-count">
          <fontSize>0.016</fontSize>
          <fontPath>${fontRegular}</fontPath>
          <lineSpacing>1</lineSpacing>
@@ -116,11 +116,6 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <origin>0 1</origin>
          <pos>0 0.916666666666667</pos>
       </image>
-      <text name="menu-title">
-         <origin>0 1</origin>
-         <text>EmulationStation-DE</text>
-         <color>777777</color>
-      </text>
       <text name="menu-title-system,menu-title-auto-collection,menu-title-custom-collection">
          <origin>0 1</origin>
          <fontPath>${fontBold}</fontPath>
@@ -135,6 +130,11 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </text>
       <text name="menu-title-custom-collection">
          <text>${system.fullName.customCollections}</text>
+      </text>
+      <text name="game-count">
+         <origin>0 1</origin>
+         <color>777777</color>
+         <systemdata>gamecount</systemdata>
       </text>
       <helpsystem name="help">
          <origin>1 1</origin>
@@ -244,10 +244,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <carousel name="carousel">
             <itemSize>0.4 0.6</itemSize>
          </carousel>
-         <text name="menu-title">
+         <text name="menu-title-system,menu-title-auto-collection,menu-title-custom-collection">
             <pos>0.046875 0.953</pos>
          </text>
-         <text name="menu-title-system,menu-title-auto-collection,menu-title-custom-collection">
+         <text name="game-count">
             <pos>0.046875 0.978</pos>
          </text>
          <helpsystem name="help">
@@ -283,10 +283,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <carousel name="carousel">
             <itemSize>0.444444444444444 0.6</itemSize>
          </carousel>
-         <text name="menu-title">
+         <text name="menu-title-system,menu-title-auto-collection,menu-title-custom-collection">
             <pos>0.052083333333333 0.953</pos>
          </text>
-         <text name="menu-title-system,menu-title-auto-collection,menu-title-custom-collection">
+         <text name="game-count">
             <pos>0.052083333333333 0.978</pos>
          </text>
          <helpsystem name="help">
