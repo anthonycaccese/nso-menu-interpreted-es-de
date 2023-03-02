@@ -16,9 +16,11 @@ This theme was created in collaboration with [@rogs123](https://github.com/rogs1
    - 16:9 and 16:10 aspect ratios are supported
 - `Theme Variant` - sets the layout used for the system view.  There are 4 system view variants to choose from:
    - Controllers
+   - Controllers (Flat Color)
    - Logos (B/W)
    - Logos (Color)
    - Colorful (*note: depending on the amount of systems you display you may need to increase your VRAM in ES-DE to use this variant*)
+   - Colorful (Flat Color)
    
 ## Additional Screenshots
 | Logos (Color) Variant | Logos (B/W) Variant | Colorful Variant |
