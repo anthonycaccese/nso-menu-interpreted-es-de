@@ -141,7 +141,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </helpsystem>
    </view>
 
-   <variant name="system-view-controllers">
+   <variant name="system-view-controllers,system-view-controllers-flat-background">
       <view name="system">
          <carousel name="carousel">
             <staticImage>./_inc/systems/controllers/${system.theme}.png</staticImage>
@@ -162,7 +162,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          </carousel>
       </view>
    </variant>
-   <variant name="system-view-colorful">
+   <variant name="system-view-colorful,system-view-colorful-flat-background">
       <view name="system">
          <carousel name="carousel">
             <staticImage>./_inc/systems/colorful/${system.theme}.png</staticImage>
@@ -316,6 +316,14 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       <view name="system">
          <image name="background">
             <color>aaaaaa</color>
+         </image>
+      </view>
+   </variant>
+
+   <variant name="system-view-controllers-flat-background,system-view-colorful-flat-background">
+      <view name="system">
+         <image name="background-art">
+            <color>ffffff00</color>
          </image>
       </view>
    </variant>

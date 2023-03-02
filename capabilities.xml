@@ -38,6 +38,10 @@
       <label>Controllers</label>
       <selectable>true</selectable>
    </variant>
+   <variant name="system-view-controllers-flat-background">
+      <label>Controllers (Flat Color)</label>
+      <selectable>true</selectable>
+   </variant>
    <variant name="system-view-logos-bw">
       <label>Logos (B/W)</label>
       <selectable>true</selectable>
@@ -48,6 +52,10 @@
    </variant>
    <variant name="system-view-colorful">
       <label>Colorful</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="system-view-colorful-flat-background">
+      <label>Colorful (Flat Color)</label>
       <selectable>true</selectable>
    </variant>
 
