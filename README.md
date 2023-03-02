@@ -3,6 +3,8 @@ A simple theme for the version of EmulationStation used in [ES-DE](https://es-de
 
 This theme was created in collaboration with [@rogs123](https://github.com/rogs123)
 
+![Screenshot 2023-03-02 at 10 06 07 AM](https://user-images.githubusercontent.com/1454947/222468814-fd08d7eb-539f-4d35-bc65-e202428ea57b.png)
+
 ## **Preview**
 | System View | Gamelist View |
 |----|----|
