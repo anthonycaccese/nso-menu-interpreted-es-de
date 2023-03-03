@@ -28,6 +28,7 @@ This theme was created in collaboration with [@rogs123](https://github.com/rogs1
 | ![Screenshot 2023-03-01 at 8 31 40 PM](https://user-images.githubusercontent.com/1454947/222309396-031fe6e2-33e1-4efe-987d-782700b9439c.png) | ![Screenshot 2023-03-01 at 8 31 06 PM](https://user-images.githubusercontent.com/1454947/222309435-73c8e86e-f20a-42c0-a1ce-37da6a93b1a5.png) | ![Screenshot 2023-03-01 at 8 30 45 PM](https://user-images.githubusercontent.com/1454947/222309474-6201c564-2392-4964-bb8e-6d72f5111805.png) |
 
 ## **Acknowledgments**
+* Some avatar images are sourced from the Nintedo Switch profile avatars list.
 * Some system logos were sourced and modified from the excellent work done by Dan Patrick [here](https://archive.org/details/console-logos-professionally-redrawn-plus-official-versions).
 * Some system logos were sourced and modified from the excellent work done by Bruno (HVR88) [here](https://github.com/HVR88).
 * Most system images were sourced from the excellent work done by “viking” and many other contributors to the COLORFUL platform video set [here](https://forums.launchbox-app.com/files/file/1958-colorful-platform-video-set/).
@@ -36,4 +37,4 @@ This theme was created in collaboration with [@rogs123](https://github.com/rogs1
 
 ## **License**
 Creative Commons CC-BY-NC-SA - https://creativecommons.org/licenses/by-nc-sa/2.0/
-You are free to share and adapt this theme as long as you provide attribution back to me (and the above Acknowledgments) as well share any updates you make under the same licence terms.
+You are free to share and adapt this theme as long as you provide attribution back to me (and the above Acknowledgments) as well share any updates you make under the same licence terms.  This theme (and all of its contained assets) are not to be used for commercial purposes.
