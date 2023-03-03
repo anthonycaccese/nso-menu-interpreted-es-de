@@ -3,12 +3,10 @@ A simple theme for the version of EmulationStation used in [ES-DE](https://es-de
 
 This theme was created in collaboration with [@rogs123](https://github.com/rogs123)
 
-![Screenshot 2023-03-02 at 10 06 07 AM](https://user-images.githubusercontent.com/1454947/222468814-fd08d7eb-539f-4d35-bc65-e202428ea57b.png)
-
 ## **Preview**
 | System View | Gamelist View |
 |----|----|
-| ![Screenshot 2023-03-03 at 8 10 59 AM](https://user-images.githubusercontent.com/1454947/222729246-3f9d8741-9f89-438f-ade9-153b098d57e2.png) | ![Screenshot 2023-03-03 at 8 11 07 AM](https://user-images.githubusercontent.com/1454947/222729263-a9ca4092-e6c1-4329-afd9-da62e3d0e4ab.png) |
+| ![Screenshot 2023-03-03 at 8 31 38 AM](https://user-images.githubusercontent.com/1454947/222733121-975db30a-098c-4f77-aebd-f252ebe8c4cc.png) | ![Screenshot 2023-03-03 at 8 31 51 AM](https://user-images.githubusercontent.com/1454947/222733148-42d38a12-34d1-4063-8ecc-13d16c1e44d3.png) |
 
 ## **Configuration Options**
 - The theme has a simple set of options that can be changed directly from the UI Settings menu of ES-DE 
@@ -25,7 +23,7 @@ This theme was created in collaboration with [@rogs123](https://github.com/rogs1
 ## Additional Screenshots
 | Logos (Color) Variant | Logos (B/W) Variant | Colorful Variant |
 |----|----|----|
-| ![Screenshot 2023-03-01 at 8 31 40 PM](https://user-images.githubusercontent.com/1454947/222309396-031fe6e2-33e1-4efe-987d-782700b9439c.png) | ![Screenshot 2023-03-01 at 8 31 06 PM](https://user-images.githubusercontent.com/1454947/222309435-73c8e86e-f20a-42c0-a1ce-37da6a93b1a5.png) | ![Screenshot 2023-03-01 at 8 30 45 PM](https://user-images.githubusercontent.com/1454947/222309474-6201c564-2392-4964-bb8e-6d72f5111805.png) |
+| ![Screenshot 2023-03-03 at 8 36 26 AM](https://user-images.githubusercontent.com/1454947/222733915-222ed83b-a945-457b-8e53-b089e649377a.png) | ![Screenshot 2023-03-03 at 8 33 47 AM](https://user-images.githubusercontent.com/1454947/222733937-3ba10bd5-caef-427f-802a-e3a9f39cf09d.png) | ![Screenshot 2023-03-03 at 8 36 45 AM](https://user-images.githubusercontent.com/1454947/222733958-6583037f-4a6e-422e-b6fd-184d4ba8bd7a.png) |
 
 ## **Acknowledgments**
 * Some avatar images are sourced from the Nintedo Switch profile avatars list.
