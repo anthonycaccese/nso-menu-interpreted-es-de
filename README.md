@@ -8,7 +8,7 @@ This theme was created in collaboration with [@rogs123](https://github.com/rogs1
 ## **Preview**
 | System View | Gamelist View |
 |----|----|
-| ![Screenshot 2023-03-01 at 8 32 29 PM](https://user-images.githubusercontent.com/1454947/222309190-1b142616-8f72-4665-881f-8fafd97458ef.png) | ![Screenshot 2023-03-01 at 8 32 50 PM](https://user-images.githubusercontent.com/1454947/222309203-dd647f28-1893-46f0-9f32-6c89bda49466.png) |
+| ![Screenshot 2023-03-03 at 8 10 59 AM](https://user-images.githubusercontent.com/1454947/222729246-3f9d8741-9f89-438f-ade9-153b098d57e2.png) | ![Screenshot 2023-03-03 at 8 11 07 AM](https://user-images.githubusercontent.com/1454947/222729263-a9ca4092-e6c1-4329-afd9-da62e3d0e4ab.png) |
 
 ## **Configuration Options**
 - The theme has a simple set of options that can be changed directly from the UI Settings menu of ES-DE 
