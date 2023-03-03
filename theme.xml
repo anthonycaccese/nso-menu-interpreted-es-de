@@ -23,6 +23,61 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <avatarImage>./_inc/images/avatars/zelda.png</avatarImage>
       </variables>
    </colorScheme>
+   <colorScheme name="avatar-gannon">
+      <variables>
+         <avatarImage>./_inc/images/avatars/gannon.png</avatarImage>
+      </variables>
+   </colorScheme>
+   <colorScheme name="avatar-mario">
+      <variables>
+         <avatarImage>./_inc/images/avatars/mario.png</avatarImage>
+      </variables>
+   </colorScheme>
+   <colorScheme name="avatar-luigi">
+      <variables>
+         <avatarImage>./_inc/images/avatars/luigi.png</avatarImage>
+      </variables>
+   </colorScheme>
+   <colorScheme name="avatar-peach">
+      <variables>
+         <avatarImage>./_inc/images/avatars/peach.png</avatarImage>
+      </variables>
+   </colorScheme>
+   <colorScheme name="avatar-yoshi">
+      <variables>
+         <avatarImage>./_inc/images/avatars/yoshi.png</avatarImage>
+      </variables>
+   </colorScheme>
+   <colorScheme name="avatar-donkeykong">
+      <variables>
+         <avatarImage>./_inc/images/avatars/donkeykong.png</avatarImage>
+      </variables>
+   </colorScheme>
+   <colorScheme name="avatar-bowser">
+      <variables>
+         <avatarImage>./_inc/images/avatars/bowser.png</avatarImage>
+      </variables>
+   </colorScheme>
+   <colorScheme name="avatar-questionblock">
+      <variables>
+         <avatarImage>./_inc/images/avatars/questionblock.png</avatarImage>
+      </variables>
+   </colorScheme>
+   <colorScheme name="avatar-tomnook">
+      <variables>
+         <avatarImage>./_inc/images/avatars/tomnook.png</avatarImage>
+      </variables>
+   </colorScheme>
+   <colorScheme name="avatar-kkslider">
+      <variables>
+         <avatarImage>./_inc/images/avatars/kkslider.png</avatarImage>
+      </variables>
+   </colorScheme>
+   <colorScheme name="avatar-isabelle">
+      <variables>
+         <avatarImage>./_inc/images/avatars/isabelle.png</avatarImage>
+      </variables>
+   </colorScheme>
    <colorScheme name="avatar-es-de">
       <variables>
          <avatarImage>./_inc/images/avatars/es-de.png</avatarImage>
@@ -30,7 +85,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    </colorScheme>
    <colorScheme name="avatar-custom">
       <variables>
-         <avatarImage>./_inc/images/avatars/custom.png</avatarImage>
+         <avatarImage>~/.emulationstation/theme-customizations/nso-menu-interpreted/custom-avatar.png</avatarImage>
       </variables>
    </colorScheme>
 
@@ -86,6 +141,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       <image name="background-art">
          <origin>0.5 0.5</origin>
          <pos>0.5 0.5</pos>
+         <cropSize>1 1</cropSize>
          <zIndex>1</zIndex>
          <gameselector>selector-random</gameselector>
          <imageType>screenshot</imageType>
@@ -238,9 +294,6 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          </image>
       </view>
       <view name="system">
-         <image name="background-art">
-            <maxSize>1 2</maxSize>
-         </image>
          <carousel name="carousel">
             <itemSize>0.4 0.6</itemSize>
          </carousel>
@@ -277,9 +330,6 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          </image>
       </view>
       <view name="system">
-         <image name="background-art">
-            <maxSize>1.4 2</maxSize>
-         </image>
          <carousel name="carousel">
             <itemSize>0.444444444444444 0.6</itemSize>
          </carousel>
