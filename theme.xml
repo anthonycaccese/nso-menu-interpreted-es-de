@@ -274,7 +274,9 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <size>1 0.916666666666667</size>
          <itemScale>1</itemScale>
          <itemSpacing>0 0</itemSpacing>
-         <unfocusedItemOpacity>0.3</unfocusedItemOpacity>
+         <unfocusedItemOpacity>1</unfocusedItemOpacity>
+         <unfocusedItemDimming>0.4</unfocusedItemDimming>
+         <unfocusedItemSaturation>1</unfocusedItemSaturation>
          <fractionalRows>true</fractionalRows>
          <textColor>ffffff</textColor>
          <textBackgroundColor>222222</textBackgroundColor>
