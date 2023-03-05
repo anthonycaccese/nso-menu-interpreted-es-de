@@ -159,6 +159,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <textColor>ffffff</textColor>
          <fontPath>${fontBold}</fontPath>
          <letterCaseAutoCollections>capitalize</letterCaseAutoCollections>
+         <fastScrolling>true</fastScrolling>
       </carousel>
       <image name="avatar-image,avatar-mask">
          <origin>0 1</origin>
