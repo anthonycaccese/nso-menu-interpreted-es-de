@@ -13,6 +13,11 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       <fontBold>./_inc/fonts/AOTFShinGoProDeBold.otf</fontBold>
    </variables>
 
+   <include>./_inc/systems/metadata-global/_default.xml</include>
+   <include>./_inc/systems/metadata-custom/_default.xml</include>
+   <include>./_inc/systems/metadata-global/${system.theme}.xml</include>
+   <include>./_inc/systems/metadata-custom/${system.theme}.xml</include>
+
    <colorScheme name="avatar-link">
       <variables>
          <avatarImage>./_inc/images/avatars/link.png</avatarImage>
@@ -135,6 +140,9 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    </view>
 
    <view name="system">
+      <image name="background">
+         <color>${systemColor}</color>
+      </image>
       <gameselector name="selector-random">
          <selection>random</selection>
       </gameselector>
@@ -362,9 +370,6 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          </helpsystem>
       </view>
    </aspectRatio>
-
-   <include>./_inc/systems/_default.xml</include>
-   <include>./_inc/systems/${system.theme}.xml</include>
 
    <variant name="system-view-logos-color">
       <view name="system">
