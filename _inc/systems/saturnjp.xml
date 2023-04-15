@@ -12,14 +12,14 @@
    <aspectRatio name="16:9">
       <view name="gamelist">
          <grid name="grid">
-            <itemSize>0.2 0.548611111111111</itemSize><!-- 256 395 -->
+            <itemSize>0.2 0.355555555555556</itemSize><!-- 256 256 -->
          </grid>
       </view>
    </aspectRatio>
    <aspectRatio name="16:10">
       <view name="gamelist">
          <grid name="grid">
-            <itemSize>0.25 0.616666666666667</itemSize><!-- 288 444 -->
+            <itemSize>0.25 0.36</itemSize><!-- 288 288 -->
          </grid>
       </view>
    </aspectRatio>

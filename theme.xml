@@ -273,7 +273,8 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <origin>0 0</origin>
          <pos>0 0.083333333333333</pos>
          <size>1 0.916666666666667</size>
-         <itemScale>1</itemScale>
+         <itemScale>1.2</itemScale>
+         <scaleInwards>true</scaleInwards>
          <itemSpacing>0 0</itemSpacing>
          <unfocusedItemOpacity>1</unfocusedItemOpacity>
          <unfocusedItemDimming>0.4</unfocusedItemDimming>
