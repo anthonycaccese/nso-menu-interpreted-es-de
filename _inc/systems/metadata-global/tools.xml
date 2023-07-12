@@ -7,5 +7,9 @@
       <systemReleaseDateFormated>Various</systemReleaseDateFormated>
       <systemHardwareType>Folder</systemHardwareType>
       <systemColor>777777</systemColor>
+      <systemColorPalette1>F6DD08</systemColorPalette1>
+      <systemColorPalette2>800000</systemColorPalette2>
+      <systemColorPalette3>FF0000</systemColorPalette3>
+      <systemColorPalette4>303030</systemColorPalette4>
    </variables>
 </theme>
