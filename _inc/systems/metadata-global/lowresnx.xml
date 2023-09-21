@@ -7,9 +7,9 @@
       <systemReleaseDateFormated>2017</systemReleaseDateFormated>
       <systemHardwareType>Engine</systemHardwareType>
       <systemColor>00AAAA</systemColor>
-      <systemColorPalette1>00AAAA</systemColorPalette1>
-      <systemColorPalette2>00AAAA</systemColorPalette2>
-      <systemColorPalette3>00AAAA</systemColorPalette3>
-      <systemColorPalette4>00AAAA</systemColorPalette4>
+      <systemColorPalette1>FF8300</systemColorPalette1>
+      <systemColorPalette2>56A0A2</systemColorPalette2>
+      <systemColorPalette3>F8EA32</systemColorPalette3>
+      <systemColorPalette4>FF5700</systemColorPalette4>
    </variables>
 </theme>
