@@ -1,6 +1,10 @@
 <theme>
    <variables>
       <systemDescription>Quickly access and complete the games on your backlog.</systemDescription>
+      <systemManufacturer>Various</systemManufacturer>
+      <systemReleaseYear>Various</systemReleaseYear>
+      <systemReleaseDate>Various</systemReleaseDate>
+      <systemReleaseDateFormated>Various</systemReleaseDateFormated>
       <systemHardwareType>Folder</systemHardwareType>
    </variables>
 </theme>

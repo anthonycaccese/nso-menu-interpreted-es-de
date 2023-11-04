@@ -10,7 +10,7 @@ The PV-1000 is powered by a Zilog Z80 CPU, with 2 KB RAM, with 1 KB allocated as
       <systemReleaseDate>1983-10-01</systemReleaseDate>
       <systemReleaseDateFormated>October 1, 1983</systemReleaseDateFormated>
       <systemHardwareType>Console</systemHardwareType>
-      <systemColor>9e3830</systemColor>
+      <systemColor>972F32</systemColor>
       <systemColorPalette1>2A4E78</systemColorPalette1>
       <systemColorPalette2>4FBBB2</systemColorPalette2>
       <systemColorPalette3>DCD9D1</systemColorPalette3>

@@ -1,6 +1,10 @@
 <theme>
    <variables>
       <systemDescription>View all of your completed games.</systemDescription>
+      <systemManufacturer>Various</systemManufacturer>
+      <systemReleaseYear>Various</systemReleaseYear>
+      <systemReleaseDate>Various</systemReleaseDate>
+      <systemReleaseDateFormated>Various</systemReleaseDateFormated>
       <systemHardwareType>Folder</systemHardwareType>
    </variables>
 </theme>
