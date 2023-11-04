@@ -120,15 +120,18 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       <image name="avatar-image">
          <path>${avatarImage}</path>
          <zIndex>3</zIndex>
+         <stationary>withinView</stationary>
       </image>
       <image name="avatar-mask">
          <path>./_inc/images/avatar-mask.svg</path>
          <zIndex>4</zIndex>
+         <stationary>withinView</stationary>
       </image>
       <text name="menu-title-system,menu-title-auto-collection,menu-title-custom-collection,custom-collection-name,game-count">
          <fontSize>0.016</fontSize>
          <fontPath>${fontRegular}</fontPath>
          <lineSpacing>1</lineSpacing>
+         <stationary>withinView</stationary>
       </text>
       <helpsystem name="help">
          <textColor>ffffff99</textColor>
@@ -230,7 +233,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    <variant name="system-view-colorful,system-view-colorful-flat-background">
       <view name="system">
          <carousel name="carousel">
-            <staticImage>./_inc/systems/colorful/${system.theme}.png</staticImage>
+            <staticImage>./_inc/systems/colorful/${system.theme}.webp</staticImage>
             <itemScale>1.5</itemScale>
          </carousel>
       </view>
@@ -273,6 +276,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <color>ffffff</color>
          <metadata>name</metadata>
          <lineSpacing>1</lineSpacing>
+         <stationary>withinView</stationary>
       </text>
       <helpsystem name="help">
          <origin>1 0</origin>

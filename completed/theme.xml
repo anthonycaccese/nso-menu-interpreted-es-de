@@ -1,0 +1,16 @@
+<theme>
+   <include>./../theme.xml</include>
+   <view name="system">
+      <carousel name="carousel">
+         <text>Completed</text>
+      </carousel>
+      <text name="menu-title-custom-collection">
+         <text>Completed</text>
+      </text>
+   </view>
+   <view name="gamelist">
+      <text name="menu-title-custom-collection">
+         <text>Completed</text>
+      </text>
+   </view>
+</theme>
