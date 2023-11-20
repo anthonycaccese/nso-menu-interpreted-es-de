@@ -350,6 +350,67 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </aspectRatio>
    </variant>
 
+   <aspectRatio name="4:3">
+      <view name="system,gamelist">
+         <image name="avatar-image,avatar-mask">
+            <size>0.083333333333333 0.111111111111111</size><!-- 80 80 -->
+         </image>
+      </view>
+      <view name="system">
+         <text name="menu-title-system">
+            <pos>0.083333333333333 0.938888888888889</pos><!-- 80 676 -->
+         </text>
+         <text name="game-count">
+            <pos>0.083333333333333 0.966666666666667</pos><!-- 80 696 -->
+         </text>
+         <helpsystem name="help">
+            <pos>0.979166666666667 0.954166666666667</pos><!-- 1256 687 -->
+         </helpsystem>
+      </view>
+      <view name="gamelist">
+         <text name="menu-title-system">
+            <pos>0.083333333333333 0.027777777777778</pos><!-- 80 20-->
+         </text>
+         <text name="custom-collection-name">
+            <pos>0.21 0.027777777777778</pos>
+         </text>
+         <text name="game-name">
+            <pos>0.083333333333333 0.055555555555556</pos><!-- 80 40 -->
+            <size>0.3 0.021333333333333</size>
+         </text>
+         <helpsystem name="help">
+            <fontSize>0.02</fontSize>
+            <pos>0.979166666666667 0.045833333333333</pos>
+         </helpsystem>
+      </view>
+   </aspectRatio>
+   <variant name="
+      system-view-controllers,
+      system-view-controllers-flat-background
+      ">
+      <aspectRatio name="4:3">
+         <view name="system">
+            <carousel name="carousel">
+               <pos>0 0.46</pos>
+               <itemSize>0.55 0.55</itemSize>
+            </carousel>
+         </view>
+      </aspectRatio>
+   </variant>
+   <variant name="
+      system-view-colorful,
+      system-view-colorful-flat-background
+      ">
+      <aspectRatio name="4:3">
+         <view name="system">
+            <carousel name="carousel">
+               <pos>0 0.45</pos>
+               <itemSize>1 1</itemSize>
+            </carousel>
+         </view>
+      </aspectRatio>
+   </variant>
+
    <variant name="system-view-controllers-flat-background,system-view-colorful-flat-background">
       <view name="system">
          <image name="background-art">
