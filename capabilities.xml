@@ -67,20 +67,20 @@
       <entry>builtin-fade</entry>
    </suppressTransitionProfiles>
 
-   <variant name="system-view-colorful-flat-background">
-      <label>Colorful (Flat Color)</label>
-      <selectable>true</selectable>
-   </variant>
-   <variant name="system-view-colorful">
-      <label>Colorful</label>
+   <variant name="system-view-controllers">
+      <label>Controllers</label>
       <selectable>true</selectable>
    </variant>
    <variant name="system-view-controllers-flat-background">
       <label>Controllers (Flat Color)</label>
       <selectable>true</selectable>
    </variant>
-   <variant name="system-view-controllers">
-      <label>Controllers</label>
+   <variant name="system-view-colorful">
+      <label>Colorful</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="system-view-colorful-flat-background">
+      <label>Colorful (Flat Color)</label>
       <selectable>true</selectable>
    </variant>
 
