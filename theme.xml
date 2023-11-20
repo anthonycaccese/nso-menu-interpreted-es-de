@@ -66,8 +66,8 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </text>
       <helpsystem name="help">
          <fontSize>0.025</fontSize>
-         <textColor>ffffff77</textColor>
-         <iconColor>ffffff55</iconColor>
+         <textColor>ffffff99</textColor>
+         <iconColor>ffffff77</iconColor>
          <customButtonIcon button="dpad_updown">./_inc/images/help-dpad-updown.svg</customButtonIcon>
          <customButtonIcon button="dpad_leftright">./_inc/images/help-dpad-leftright.svg</customButtonIcon>
          <customButtonIcon button="dpad_all">./_inc/images/help-dpad-updownleftright.svg</customButtonIcon>
