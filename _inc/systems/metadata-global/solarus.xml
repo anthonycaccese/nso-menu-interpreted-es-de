@@ -1,5 +1,6 @@
 <theme>
    <variables>
+      <systemName>Solarus</systemName>
       <systemDescription>Solarus was specifically designed with cult 2D action-RPG classics in mind, such as The Legend of Zelda: A Link to the Past and Secret of Mana on the Super Nintendo, or Soleil on the Sega Megadrive/Genesis.
 
 The engine is programmed in C++, with the SDL library and an OpenGL backend. Games made with Solarus are called quests, and are programmed in Lua.

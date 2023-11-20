@@ -1,5 +1,6 @@
 <theme>
    <variables>
+      <systemName>Arduboy</systemName>
       <systemDescription>The Arduboy is a handheld game console with open source software, based on the Arduino hardware platform.</systemDescription>
       <systemManufacturer>Kevin Bates</systemManufacturer>
       <systemReleaseYear>2015</systemReleaseYear>

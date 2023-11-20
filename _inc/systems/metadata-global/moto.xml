@@ -1,5 +1,6 @@
 <theme>
    <variables>
+      <systemName>Thomson MOTO</systemName>
       <systemDescription>The Thomson MOTO line of computers were a series of 8-bit computers sold in the 1980s by French electronics company Thomson, which has been nationalized in 1982. The MOTO computers became an integral part of the French Government's plan informatique pour tous (IPT) to make computers widespread throughout France by bringing computers and programming classes to French school children. A number of computer makers, including Apple, were considered before Thomson won the contract.</systemDescription>
       <systemManufacturer>Thomson SA</systemManufacturer>
       <systemReleaseYear>1984</systemReleaseYear>

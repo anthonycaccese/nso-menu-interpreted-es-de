@@ -1,5 +1,6 @@
 <theme>
    <variables>
+      <systemName>FinalBurn Neo</systemName>
       <systemDescription>FinalBurn Neo is a Multiple Arcade Emulator most popular for emulating Neo-Geo, Capcom, Konami, and Cave games. It is developed by the FinalBurn team and originated from FinalBurn by Dave and old MAME versions.
 
 FinalBurn Neo is an active fork of the FinalBurn Alpha emulator, created by many of the former FBA developers.

@@ -1,6 +1,7 @@
 <theme>
    <variables>
-      <systemDescription>NEC PC-9801 - a not quite industry standard PC line of personal computers developed in 1982 in Japan by NEC Corporation based on IBM solutions, aimed exclusively at the Japanese market.
+      <systemName>PC-98</systemName>
+      <systemDescription>The NEC PC-9800 was line of personal computers developed in 1982 in Japan by NEC Corporation based on IBM, aimed exclusively at the Japanese market.
 
 The first model was a 16-bit architecture with an Intel 8086 processor clocked at 5 MHz and 128 KB of RAM. It shipped with graphics cards capable of displaying 8 colors at 640x400 resolution - a clear performance differentiator compared to PCs of the time.
 

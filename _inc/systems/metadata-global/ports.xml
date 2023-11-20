@@ -1,5 +1,6 @@
 <theme>
    <variables>
+      <systemName>Ports</systemName>
       <systemDescription>View and play all of your favorite game ports.</systemDescription>
       <systemManufacturer>Various</systemManufacturer>
       <systemReleaseYear>Various</systemReleaseYear>

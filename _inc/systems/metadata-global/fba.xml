@@ -1,5 +1,6 @@
 <theme>
    <variables>
+      <systemName>FinalBurn Alpha</systemName>
       <systemDescription>This source-available project is based on FinalBurn, created by Dave in 2000. It has been programmed by a team composed of Barry Harris (Old username: TrebleWinner), Jan_Klaassen, KEV, LoopMaster, Mike Haggar, Hyper Yagami and Ayeye.
 
 FinalBurn was one of the first Capcom CPS2 emulators. When this project came to a halt in 2001, its sources were widely disseminated, allowing the development of many unofficial versions, of which FBA is the most successful.

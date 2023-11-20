@@ -1,6 +1,7 @@
 <theme>
    <variables>
-      <systemDescription>View and play your ${system.fullName} games</systemDescription>
+      <systemName>${system.fullName}</systemName>
+      <systemDescription>View and play the ${system.fullName}</systemDescription>
       <systemManufacturer>&#032;</systemManufacturer>
       <systemReleaseYear>&#032;</systemReleaseYear>
       <systemReleaseDate>&#032;</systemReleaseDate>

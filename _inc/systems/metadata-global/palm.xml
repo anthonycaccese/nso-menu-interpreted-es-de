@@ -1,5 +1,6 @@
 <theme>
    <variables>
+      <systemName>Palm</systemName>
       <systemDescription>The PalmPilot Personal and PalmPilot Professional are the second generation of Palm PDA devices produced by Palm Inc (then a subsidiary of U.S. Robotics, later 3Com). These devices were launched on March 10, 1997</systemDescription>
       <systemManufacturer>Palm Inc</systemManufacturer>
       <systemReleaseYear>1997</systemReleaseYear>

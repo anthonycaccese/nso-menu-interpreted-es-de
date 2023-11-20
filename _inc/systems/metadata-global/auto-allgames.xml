@@ -1,10 +1,11 @@
 <theme>
    <variables>
-      <systemDescription>View and play every single game across your entire library.</systemDescription>
+      <systemName>All Games</systemName>
+      <systemDescription>View and play every game across your entire library.</systemDescription>
       <systemManufacturer>Various</systemManufacturer>
       <systemReleaseYear>Various</systemReleaseYear>
       <systemReleaseDate>Various</systemReleaseDate>
       <systemReleaseDateFormated>Various</systemReleaseDateFormated>
-      <systemHardwareType>Folder</systemHardwareType>
+      <systemHardwareType>Collection</systemHardwareType>
    </variables>
 </theme>

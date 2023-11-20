@@ -1,10 +1,11 @@
 <theme>
    <variables>
+      <systemName>Last Played</systemName>
       <systemDescription>View your recently played games across the entire library.</systemDescription>
       <systemManufacturer>Various</systemManufacturer>
       <systemReleaseYear>Various</systemReleaseYear>
       <systemReleaseDate>Various</systemReleaseDate>
       <systemReleaseDateFormated>Various</systemReleaseDateFormated>
-      <systemHardwareType>Folder</systemHardwareType>
+      <systemHardwareType>Collection</systemHardwareType>
    </variables>
 </theme>

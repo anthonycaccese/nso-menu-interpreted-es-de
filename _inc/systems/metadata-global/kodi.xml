@@ -1,5 +1,6 @@
 <theme>
    <variables>
+      <systemName>Kodi</systemName>
       <systemDescription>Kodi is a free and open-source media player software application developed by the XBMC Foundation, a non-profit technology consortium. Kodi is available for multiple operating systems and hardware platforms, with a software 10-foot user interface for use with televisions and remote controls.</systemDescription>
       <systemManufacturer>XBMC Foundation</systemManufacturer>
       <systemReleaseYear>2002</systemReleaseYear>

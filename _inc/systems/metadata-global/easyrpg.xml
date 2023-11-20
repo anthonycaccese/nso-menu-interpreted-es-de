@@ -1,5 +1,6 @@
 <theme>
    <variables>
+      <systemName>EasyRPG</systemName>
       <systemDescription>EasyRPG is a free, open source engine to create RPG games, aiming to be also compatible with all RPG Maker 2000 and RPG Maker 2003 games.  RPG Maker 2000/2003 games tend to have mechanics and visuals similar to 16-bit JRPGs, though custom scripts can be made by the creators to modify how the game feels and looks.</systemDescription>
       <systemManufacturer>EasyRPG Team</systemManufacturer>
       <systemReleaseYear>2007</systemReleaseYear>

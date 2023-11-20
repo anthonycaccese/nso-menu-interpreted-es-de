@@ -14,9 +14,349 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    </variables>
 
    <include>./_inc/systems/metadata-global/_default.xml</include>
-   <include>./_inc/systems/metadata-custom/_default.xml</include>
    <include>./_inc/systems/metadata-global/${system.theme}.xml</include>
+   <include>./_inc/systems/metadata-custom/_default.xml</include>
    <include>./_inc/systems/metadata-custom/${system.theme}.xml</include>
+
+   <view name="
+      system,
+      gamelist
+      ">
+      <image name="background">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <zIndex>0</zIndex>
+      </image>
+      <image name="menu-bar">
+         <size>1 0.111111111111111</size><!-- 100% 80 -->
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>000000</color>
+         <zIndex>2</zIndex>
+      </image>
+      <image name="menu-bar-shadow">
+         <size>1 0.002777777777778</size><!-- 100% 2 -->
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>000000aa</color>
+         <zIndex>2</zIndex>
+      </image>
+      <image name="avatar-image">
+         <path>${avatarImage}</path>
+         <zIndex>3</zIndex>
+         <stationary>withinView</stationary>
+      </image>
+      <image name="avatar-mask">
+         <path>./_inc/images/avatar-mask.svg</path>
+         <zIndex>4</zIndex>
+         <stationary>withinView</stationary>
+      </image>
+      <text name="
+         menu-title-system,
+         custom-collection-name,
+         game-count
+         ">
+         <fontSize>0.021333333333333</fontSize>
+         <fontPath>${fontRegular}</fontPath>
+         <lineSpacing>1</lineSpacing>
+         <stationary>withinView</stationary>
+      </text>
+      <helpsystem name="help">
+         <fontSize>0.025</fontSize>
+         <textColor>ffffff77</textColor>
+         <iconColor>ffffff55</iconColor>
+         <customButtonIcon button="dpad_updown">./_inc/images/help-dpad-updown.svg</customButtonIcon>
+         <customButtonIcon button="dpad_leftright">./_inc/images/help-dpad-leftright.svg</customButtonIcon>
+         <customButtonIcon button="dpad_all">./_inc/images/help-dpad-updownleftright.svg</customButtonIcon>
+         <customButtonIcon button="button_a_XBOX">./_inc/images/help-button-south.svg</customButtonIcon>
+         <customButtonIcon button="button_a_PS">./_inc/images/help-button-south.svg</customButtonIcon>
+         <customButtonIcon button="button_a_switch">./_inc/images/help-button-south.svg</customButtonIcon>
+         <customButtonIcon button="button_a_SNES">./_inc/images/help-button-south.svg</customButtonIcon>
+         <customButtonIcon button="button_b_XBOX">./_inc/images/help-button-east.svg</customButtonIcon>
+         <customButtonIcon button="button_b_PS">./_inc/images/help-button-east.svg</customButtonIcon>
+         <customButtonIcon button="button_b_switch">./_inc/images/help-button-east.svg</customButtonIcon>
+         <customButtonIcon button="button_b_SNES">./_inc/images/help-button-east.svg</customButtonIcon>
+         <customButtonIcon button="button_x_XBOX">./_inc/images/help-button-west.svg</customButtonIcon>
+         <customButtonIcon button="button_x_PS">./_inc/images/help-button-west.svg</customButtonIcon>
+         <customButtonIcon button="button_x_switch">./_inc/images/help-button-west.svg</customButtonIcon>
+         <customButtonIcon button="button_x_SNES">./_inc/images/help-button-west.svg</customButtonIcon>
+         <customButtonIcon button="button_y_XBOX">./_inc/images/help-button-north.svg</customButtonIcon>
+         <customButtonIcon button="button_y_PS">./_inc/images/help-button-north.svg</customButtonIcon>
+         <customButtonIcon button="button_y_switch">./_inc/images/help-button-north.svg</customButtonIcon>
+         <customButtonIcon button="button_y_SNES">./_inc/images/help-button-north.svg</customButtonIcon>
+         <customButtonIcon button="thumbstick_click">./_inc/images/help-left-stick-click.svg</customButtonIcon>
+      </helpsystem>
+   </view>
+
+   <view name="system">
+      <image name="background">
+         <color>${systemColor}</color>
+      </image>
+      <gameselector name="selector-random">
+         <selection>random</selection>
+      </gameselector>
+      <image name="background-art">
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.5</pos>
+         <cropSize>1 1</cropSize>
+         <zIndex>1</zIndex>
+         <gameselector>selector-random</gameselector>
+         <imageType>screenshot</imageType>
+         <saturation>0</saturation>
+         <color>ffffff33</color>
+      </image>
+      <carousel name="carousel">
+         <origin>0 0.5</origin>
+         <size>1 1</size>
+         <color>00000000</color>
+         <itemScale>1</itemScale>
+         <itemTransitions>animate</itemTransitions>
+         <maxItemCount>1</maxItemCount>
+         <textColor>ffffff</textColor>
+         <fontPath>${fontBold}</fontPath>
+         <letterCaseAutoCollections>capitalize</letterCaseAutoCollections>
+         <fastScrolling>true</fastScrolling>
+      </carousel>
+      <image name="avatar-image,avatar-mask">
+         <origin>0 1</origin>
+         <pos>0 1</pos>
+      </image>
+      <image name="menu-bar">
+         <origin>0 1</origin>
+         <pos>0 1</pos>
+      </image>
+      <image name="menu-bar-shadow">
+         <origin>0 1</origin>
+         <pos>0 0.888888888888889</pos><!-- 0 640 -->
+      </image>
+      <text name="menu-title-system">
+         <origin>0 1</origin>
+         <fontPath>${fontBold}</fontPath>
+         <color>ffffff</color>
+         <text>${systemName}</text>
+      </text>
+      <text name="game-count">
+         <origin>0 1</origin>
+         <color>777777</color>
+         <systemdata>gamecount</systemdata>
+      </text>
+      <helpsystem name="help">
+         <origin>1 1</origin>
+      </helpsystem>
+   </view>
+   <variant name="
+      system-view-controllers,
+      system-view-controllers-flat-background
+      ">
+      <view name="system">
+         <carousel name="carousel">
+            <staticImage>./_inc/systems/controllers/${system.theme}.png</staticImage>
+         </carousel>
+      </view>
+   </variant>
+   <variant name="
+      system-view-colorful,
+      system-view-colorful-flat-background
+      ">
+      <view name="system">
+         <carousel name="carousel">
+            <staticImage>./_inc/systems/colorful/${system.theme}.webp</staticImage>
+         </carousel>
+      </view>
+   </variant>
+
+   <view name="gamelist">
+      <image name="background">
+         <color>111111</color>
+      </image>
+      <image name="menu-bar">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+      </image>
+      <image name="menu-bar-shadow">
+         <origin>0 0</origin>
+         <pos>0 0.111111111111111</pos><!-- 0 80 -->
+      </image>
+      <image name="avatar-image,avatar-mask">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+      </image>
+      <text name="
+         menu-title-system,
+         custom-collection-name
+         ">
+         <fontPath>${fontRegular}</fontPath>
+         <color>777777</color>
+      </text>
+      <text name="menu-title-system">
+         <text>${systemName}</text>
+      </text>
+      <text name="game-name">
+         <origin>0 0</origin>
+         <fontSize>0.021333333333333</fontSize>
+         <fontPath>${fontBold}</fontPath>
+         <color>ffffff</color>
+         <metadata>name</metadata>
+         <lineSpacing>1</lineSpacing>
+         <stationary>withinView</stationary>
+         <container>true</container>
+         <containerType>horizontal</containerType>
+      </text>
+      <helpsystem name="help">
+         <origin>1 0</origin>
+      </helpsystem>
+      <grid name="grid">
+         <origin>0 0</origin>
+         <pos>0 0.111111111111111</pos><!-- 0 80 -->
+         <size>1 0.888888888888889</size><!-- 100% 640 -->
+         <itemScale>1.2</itemScale>
+         <scaleInwards>true</scaleInwards>
+         <itemSpacing>0 0</itemSpacing>
+         <unfocusedItemOpacity>1</unfocusedItemOpacity>
+         <unfocusedItemDimming>0.4</unfocusedItemDimming>
+         <unfocusedItemSaturation>1</unfocusedItemSaturation>
+         <fractionalRows>true</fractionalRows>
+         <textColor>ffffff</textColor>
+         <textBackgroundColor>222222</textBackgroundColor>
+         <fontPath>${fontBold}</fontPath>
+         <fontSize>0.03</fontSize>
+         <selectorImage>./_inc/images/grid-selector.svg</selectorImage>
+         <selectorColor>ffffffaa</selectorColor>
+         <imageFit>cover</imageFit>
+         <imageRelativeScale>1</imageRelativeScale>
+      </grid>
+   </view>
+
+   <aspectRatio name="16:9">
+      <view name="system,gamelist">
+         <image name="avatar-image,avatar-mask">
+            <size>0.0625 0.111111111111111</size><!-- 80 80 -->
+         </image>
+      </view>
+      <view name="system">
+         <text name="menu-title-system">
+            <pos>0.0625 0.938888888888889</pos><!-- 80 676 -->
+         </text>
+         <text name="game-count">
+            <pos>0.0625 0.966666666666667</pos><!-- 80 696 -->
+         </text>
+         <helpsystem name="help">
+            <pos>0.98125 0.954166666666667</pos><!-- 1256 687 -->
+         </helpsystem>
+      </view>
+      <view name="gamelist">
+         <text name="menu-title-system">
+            <pos>0.0625 0.027777777777778</pos><!-- 80 20-->
+         </text>
+         <text name="custom-collection-name">
+            <pos>0.19 0.027777777777778</pos>
+         </text>
+         <text name="game-name">
+            <pos>0.0625 0.055555555555556</pos><!-- 80 40 -->
+            <size>0.3 0.021333333333333</size>
+         </text>
+         <helpsystem name="help">
+            <pos>0.982 0.045833333333333</pos>
+         </helpsystem>
+      </view>
+   </aspectRatio>
+   <variant name="
+      system-view-controllers,
+      system-view-controllers-flat-background
+      ">
+      <aspectRatio name="16:9">
+         <view name="system">
+            <carousel name="carousel">
+               <pos>0 0.46</pos>
+               <itemSize>0.5 0.6</itemSize>
+            </carousel>
+         </view>
+      </aspectRatio>
+   </variant>
+   <variant name="
+      system-view-colorful,
+      system-view-colorful-flat-background
+      ">
+      <aspectRatio name="16:9">
+         <view name="system">
+            <carousel name="carousel">
+               <pos>0 0.45</pos>
+               <itemSize>1 1</itemSize>
+            </carousel>
+         </view>
+      </aspectRatio>
+   </variant>
+
+   <aspectRatio name="16:10">
+      <view name="system,gamelist">
+         <image name="avatar-image,avatar-mask">
+            <size>0.069444444444444 0.111111111111111</size><!-- 80 80 -->
+         </image>
+      </view>
+      <view name="system">
+         <text name="menu-title-system">
+            <pos>0.069444444444444 0.938888888888889</pos><!-- 80 676 -->
+         </text>
+         <text name="game-count">
+            <pos>0.069444444444444 0.966666666666667</pos><!-- 80 696 -->
+         </text>
+         <helpsystem name="help">
+            <pos>0.979166666666667 0.954166666666667</pos><!-- 1256 687 -->
+         </helpsystem>
+      </view>
+      <view name="gamelist">
+         <text name="menu-title-system">
+            <pos>0.069444444444444 0.027777777777778</pos><!-- 80 20-->
+         </text>
+         <text name="custom-collection-name">
+            <pos>0.21 0.027777777777778</pos>
+         </text>
+         <text name="game-name">
+            <pos>0.069444444444444 0.055555555555556</pos><!-- 80 40 -->
+            <size>0.3 0.021333333333333</size>
+         </text>
+         <helpsystem name="help">
+            <pos>0.979166666666667 0.045833333333333</pos>
+         </helpsystem>
+      </view>
+   </aspectRatio>
+   <variant name="
+      system-view-controllers,
+      system-view-controllers-flat-background
+      ">
+      <aspectRatio name="16:10">
+         <view name="system">
+            <carousel name="carousel">
+               <pos>0 0.46</pos>
+               <itemSize>0.55 0.55</itemSize>
+            </carousel>
+         </view>
+      </aspectRatio>
+   </variant>
+   <variant name="
+      system-view-colorful,
+      system-view-colorful-flat-background
+      ">
+      <aspectRatio name="16:10">
+         <view name="system">
+            <carousel name="carousel">
+               <pos>0 0.45</pos>
+               <itemSize>1 1</itemSize>
+            </carousel>
+         </view>
+      </aspectRatio>
+   </variant>
+
+   <variant name="system-view-controllers-flat-background,system-view-colorful-flat-background">
+      <view name="system">
+         <image name="background-art">
+            <color>ffffff00</color>
+         </image>
+      </view>
+   </variant>
 
    <colorScheme name="avatar-link">
       <variables>
@@ -93,302 +433,5 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <avatarImage>~/.emulationstation/theme-customizations/nso-menu-interpreted/custom-avatar.png</avatarImage>
       </variables>
    </colorScheme>
-
-   <view name="system,gamelist">
-      <image name="background">
-         <origin>0 0</origin>
-         <pos>0 0</pos>
-         <size>1 1</size>
-         <path>${spacerImage}</path>
-         <tile>true</tile>
-         <zIndex>0</zIndex>
-      </image>
-      <image name="menu-bar">
-         <size>1 0.083333333333333</size>
-         <path>${spacerImage}</path>
-         <tile>true</tile>
-         <color>000000</color>
-         <zIndex>2</zIndex>
-      </image>
-      <image name="menu-bar-shadow">
-         <size>1 0.002777777777778</size>
-         <path>${spacerImage}</path>
-         <tile>true</tile>
-         <color>000000aa</color>
-         <zIndex>2</zIndex>
-      </image>
-      <image name="avatar-image">
-         <path>${avatarImage}</path>
-         <zIndex>3</zIndex>
-         <stationary>withinView</stationary>
-      </image>
-      <image name="avatar-mask">
-         <path>./_inc/images/avatar-mask.svg</path>
-         <zIndex>4</zIndex>
-         <stationary>withinView</stationary>
-      </image>
-      <text name="menu-title-system,menu-title-auto-collection,menu-title-custom-collection,custom-collection-name,game-count">
-         <fontSize>0.016</fontSize>
-         <fontPath>${fontRegular}</fontPath>
-         <lineSpacing>1</lineSpacing>
-         <stationary>withinView</stationary>
-      </text>
-      <helpsystem name="help">
-         <textColor>ffffff99</textColor>
-         <iconColor>ffffff44</iconColor>
-         <fontPath>${fontRegular}</fontPath>
-         <letterCase>capitalize</letterCase>
-         <fontSize>0.016</fontSize>
-      </helpsystem>
-   </view>
-
-   <view name="system">
-      <image name="background">
-         <color>${systemColor}</color>
-      </image>
-      <gameselector name="selector-random">
-         <selection>random</selection>
-      </gameselector>
-      <image name="background-art">
-         <origin>0.5 0.5</origin>
-         <pos>0.5 0.5</pos>
-         <cropSize>1 1</cropSize>
-         <zIndex>1</zIndex>
-         <gameselector>selector-random</gameselector>
-         <imageType>screenshot</imageType>
-         <saturation>0</saturation>
-         <color>ffffff33</color>
-      </image>
-      <carousel name="carousel">
-         <origin>0 0</origin>
-         <pos>0 0</pos>
-         <size>1 1</size>
-         <color>00000000</color>
-         <itemScale>1</itemScale>
-         <itemTransitions>animate</itemTransitions>
-         <maxItemCount>1</maxItemCount>
-         <textColor>ffffff</textColor>
-         <fontPath>${fontBold}</fontPath>
-         <letterCaseAutoCollections>capitalize</letterCaseAutoCollections>
-         <fastScrolling>true</fastScrolling>
-      </carousel>
-      <image name="avatar-image,avatar-mask">
-         <origin>0 1</origin>
-         <pos>0 1</pos>
-      </image>
-      <image name="menu-bar">
-         <origin>0 1</origin>
-         <pos>0 1</pos>
-      </image>
-      <image name="menu-bar-shadow">
-         <origin>0 1</origin>
-         <pos>0 0.916666666666667</pos>
-      </image>
-      <text name="menu-title-system,menu-title-auto-collection,menu-title-custom-collection">
-         <origin>0 1</origin>
-         <fontPath>${fontBold}</fontPath>
-         <color>ffffff</color>
-      </text>
-      <text name="menu-title-system">
-         <text>${system.fullName.noCollections}</text>
-      </text>
-      <text name="menu-title-auto-collection">
-         <text>${system.fullName.autoCollections}</text>
-         <letterCase>capitalize</letterCase>
-      </text>
-      <text name="menu-title-custom-collection">
-         <text>${system.fullName.customCollections}</text>
-      </text>
-      <text name="game-count">
-         <origin>0 1</origin>
-         <color>777777</color>
-         <systemdata>gamecount</systemdata>
-      </text>
-      <helpsystem name="help">
-         <origin>1 1</origin>
-      </helpsystem>
-   </view>
-
-   <variant name="system-view-controllers,system-view-controllers-flat-background">
-      <view name="system">
-         <carousel name="carousel">
-            <staticImage>./_inc/systems/controllers/${system.theme}.png</staticImage>
-         </carousel>
-      </view>
-   </variant>
-   <variant name="system-view-logos-bw">
-      <view name="system">
-         <carousel name="carousel">
-            <staticImage>./_inc/systems/logos-bw/${system.theme}.svg</staticImage>
-         </carousel>
-      </view>
-   </variant>
-   <variant name="system-view-logos-color">
-      <view name="system">
-         <carousel name="carousel">
-            <staticImage>./_inc/systems/logos-color/${system.theme}.svg</staticImage>
-         </carousel>
-      </view>
-   </variant>
-   <variant name="system-view-colorful,system-view-colorful-flat-background">
-      <view name="system">
-         <carousel name="carousel">
-            <staticImage>./_inc/systems/colorful/${system.theme}.webp</staticImage>
-            <itemScale>1.5</itemScale>
-         </carousel>
-      </view>
-   </variant>
-
-   <view name="gamelist">
-      <image name="background">
-         <color>111111</color>
-      </image>
-      <image name="menu-bar">
-         <origin>0 0</origin>
-         <pos>0 0</pos>
-      </image>
-      <image name="menu-bar-shadow">
-         <origin>0 0</origin>
-         <pos>0 0.083333333333333</pos>
-      </image>
-      <image name="avatar-image,avatar-mask">
-         <origin>0 0</origin>
-         <pos>0 0</pos>
-      </image>
-      <text name="menu-title-system,menu-title-auto-collection,menu-title-custom-collection,custom-collection-name">
-         <fontPath>${fontRegular}</fontPath>
-         <color>777777</color>
-      </text>
-      <text name="menu-title-system">
-         <text>${system.fullName.noCollections}</text>
-      </text>
-      <text name="menu-title-auto-collection">
-         <text>${system.fullName.autoCollections}</text>
-         <letterCase>capitalize</letterCase>
-      </text>
-      <text name="menu-title-custom-collection">
-         <text>${system.fullName.customCollections}</text>
-      </text>
-      <text name="game-name">
-         <origin>0 0</origin>
-         <fontSize>0.016</fontSize>
-         <fontPath>${fontBold}</fontPath>
-         <color>ffffff</color>
-         <metadata>name</metadata>
-         <lineSpacing>1</lineSpacing>
-         <stationary>withinView</stationary>
-      </text>
-      <helpsystem name="help">
-         <origin>1 0</origin>
-      </helpsystem>
-      <grid name="grid">
-         <origin>0 0</origin>
-         <pos>0 0.083333333333333</pos>
-         <size>1 0.916666666666667</size>
-         <itemScale>1.2</itemScale>
-         <scaleInwards>true</scaleInwards>
-         <itemSpacing>0 0</itemSpacing>
-         <unfocusedItemOpacity>1</unfocusedItemOpacity>
-         <unfocusedItemDimming>0.4</unfocusedItemDimming>
-         <unfocusedItemSaturation>1</unfocusedItemSaturation>
-         <fractionalRows>true</fractionalRows>
-         <textColor>ffffff</textColor>
-         <textBackgroundColor>222222</textBackgroundColor>
-         <fontPath>${fontBold}</fontPath>
-         <fontSize>0.03</fontSize>
-         <selectorImage>./_inc/images/grid-selector.svg</selectorImage>
-         <selectorColor>ffffffaa</selectorColor>
-         <imageFit>cover</imageFit>
-         <imageRelativeScale>1</imageRelativeScale>
-      </grid>
-   </view>
-
-   <aspectRatio name="16:9">
-      <view name="system,gamelist">
-         <image name="avatar-image,avatar-mask">
-            <size>0.046875 0.083333333333333</size>
-         </image>
-      </view>
-      <view name="system">
-         <carousel name="carousel">
-            <itemSize>0.4 0.6</itemSize>
-         </carousel>
-         <text name="menu-title-system,menu-title-auto-collection,menu-title-custom-collection">
-            <pos>0.046875 0.953</pos>
-         </text>
-         <text name="game-count">
-            <pos>0.046875 0.978</pos>
-         </text>
-         <helpsystem name="help">
-            <pos>0.982 0.966</pos>
-         </helpsystem>
-      </view>
-      <view name="gamelist">
-         <text name="menu-title-system,menu-title-auto-collection,menu-title-custom-collection">
-            <pos>0.046875 0.022</pos>
-         </text>
-         <text name="custom-collection-name">
-            <pos>0.102 0.022</pos>
-         </text>
-         <text name="game-name">
-            <pos>0.046875 0.047</pos>
-         </text>
-         <helpsystem name="help">
-            <pos>0.982 0.034</pos>
-         </helpsystem>
-      </view>
-   </aspectRatio>
-
-   <aspectRatio name="16:10">
-      <view name="system,gamelist">
-         <image name="avatar-image,avatar-mask">
-            <size>0.052083333333333 0.083333333333333</size>
-         </image>
-      </view>
-      <view name="system">
-         <carousel name="carousel">
-            <itemSize>0.444444444444444 0.6</itemSize>
-         </carousel>
-         <text name="menu-title-system,menu-title-auto-collection,menu-title-custom-collection">
-            <pos>0.052083333333333 0.953</pos>
-         </text>
-         <text name="game-count">
-            <pos>0.052083333333333 0.978</pos>
-         </text>
-         <helpsystem name="help">
-            <pos>0.98 0.966</pos>
-         </helpsystem>
-      </view>
-      <view name="gamelist">
-         <text name="menu-title-system,menu-title-auto-collection,menu-title-custom-collection">
-            <pos>0.052083333333333 0.022</pos>
-         </text>
-         <text name="custom-collection-name">
-            <pos>0.113333333333333 0.022</pos>
-         </text>
-         <text name="game-name">
-            <pos>0.052083333333333 0.047</pos>
-         </text>
-         <helpsystem name="help">
-            <pos>0.98 0.034</pos>
-         </helpsystem>
-      </view>
-   </aspectRatio>
-
-   <variant name="system-view-logos-color">
-      <view name="system">
-         <image name="background">
-            <color>aaaaaa</color>
-         </image>
-      </view>
-   </variant>
-
-   <variant name="system-view-controllers-flat-background,system-view-colorful-flat-background">
-      <view name="system">
-         <image name="background-art">
-            <color>ffffff00</color>
-         </image>
-      </view>
-   </variant>
 
 </theme>
