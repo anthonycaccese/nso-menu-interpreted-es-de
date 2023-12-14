@@ -7,5 +7,6 @@
       <systemReleaseDate>Various</systemReleaseDate>
       <systemReleaseDateFormated>Various</systemReleaseDateFormated>
       <systemHardwareType>Folder</systemHardwareType>
+      <systemCoverSize>square</systemCoverSize>
    </variables>
 </theme>

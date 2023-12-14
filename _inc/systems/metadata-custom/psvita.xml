@@ -4,18 +4,4 @@
          <imageType>cover,screenshot</imageType>
       </grid>
    </view>
-   <aspectRatio name="16:9">
-      <view name="gamelist">
-         <grid name="grid">
-            <itemSize>0.2 0.606944444444444</itemSize><!-- 256 437 -->
-         </grid>
-      </view>
-   </aspectRatio>
-   <aspectRatio name="16:10">
-      <view name="gamelist">
-         <grid name="grid">
-            <itemSize>0.25 0.683333333333333</itemSize><!-- 288 492 -->
-         </grid>
-      </view>
-   </aspectRatio>
 </theme>

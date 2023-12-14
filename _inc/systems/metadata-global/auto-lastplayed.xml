@@ -7,5 +7,6 @@
       <systemReleaseDate>Various</systemReleaseDate>
       <systemReleaseDateFormated>Various</systemReleaseDateFormated>
       <systemHardwareType>Collection</systemHardwareType>
+      <systemCoverSize>square</systemCoverSize>
    </variables>
 </theme>

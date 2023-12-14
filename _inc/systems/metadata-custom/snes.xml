@@ -1,5 +1,4 @@
 <theme>
-   <include>./../../grids/landscape.xml</include>
    <view name="gamelist">
       <grid name="grid">
          <imageType>cover,screenshot</imageType>

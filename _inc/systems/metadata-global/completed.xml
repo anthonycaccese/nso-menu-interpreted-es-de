@@ -8,5 +8,6 @@
       <systemReleaseDateFormated>Various</systemReleaseDateFormated>
       <systemHardwareType>Collection</systemHardwareType>
       <systemColor>222222</systemColor>
+      <systemCoverSize>square</systemCoverSize>
    </variables>
 </theme>

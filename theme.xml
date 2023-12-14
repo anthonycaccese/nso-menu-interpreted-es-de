@@ -168,6 +168,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </view>
    </variant>
 
+   <include>./_inc/grids/${systemCoverSize}.xml</include>
    <view name="gamelist">
       <image name="background">
          <color>111111</color>
@@ -223,8 +224,8 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <textBackgroundColor>222222</textBackgroundColor>
          <fontPath>${fontBold}</fontPath>
          <fontSize>0.03</fontSize>
-         <selectorImage>./_inc/images/grid-selector.svg</selectorImage>
-         <selectorColor>ffffffaa</selectorColor>
+         <selectorImage>./_inc/grids/${systemCoverSize}.svg</selectorImage>
+         <selectorColor>ffffff</selectorColor>
          <imageFit>cover</imageFit>
          <imageRelativeScale>1</imageRelativeScale>
       </grid>

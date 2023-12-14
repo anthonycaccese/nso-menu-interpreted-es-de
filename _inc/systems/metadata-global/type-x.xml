@@ -9,6 +9,7 @@ Based on commodity personal computer hardware architecture, Type X is not a spec
       <systemReleaseDate>2004</systemReleaseDate>
       <systemReleaseDateFormated>2004</systemReleaseDateFormated>
       <systemHardwareType>Arcade</systemHardwareType>
+      <systemCoverSize>portrait</systemCoverSize>
       <systemColor>2A7FBD</systemColor>
       <systemColorPalette1>F6DD08</systemColorPalette1>
       <systemColorPalette2>800000</systemColorPalette2>
