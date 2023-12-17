@@ -14,7 +14,7 @@ This theme was created in collaboration with [@rogs123](https://github.com/rogs1
 ## **Configuration Options**
 - The theme has a simple set of options that can be changed directly from the UI Settings menu of ES-DE 
 - `Theme Aspect Ratio` - sets the aspect ratio the theme will render at. If needed, this should be changed to match the aspect ratio of your screen.
-   - 16:9 and 16:10 aspect ratios are supported
+   - 16:9, 16:10 and 4:3 aspect ratios are supported
 - `Theme Variant` - sets the layout used for the system view.  There are 4 variants to choose from:
    - Controllers
    - Controllers (Flat Color)
@@ -24,7 +24,8 @@ This theme was created in collaboration with [@rogs123](https://github.com/rogs1
 ## **Acknowledgments**
 * Some avatar images are sourced from the Nintedo Switch profile avatars list.
 * Most system images were sourced from the excellent work done by “viking” and many other contributors to the COLORFUL platform video set [here](https://forums.launchbox-app.com/files/file/1958-colorful-platform-video-set/).
-* Most controller artwork was sourced from the excellent work by [RickyRomero](https://dribbble.com/RickyRomero) via their work for OpenEMU
+* Some controller artwork ws sourced from the excellent work by [Pineapple_Graphics](https://archive.org/details/full-color-pngs)
+* Some controller artwork was sourced from the excellent work by [RickyRomero](https://dribbble.com/RickyRomero) via their work for OpenEMU
 * The base folder icon that was used to create the All Games, Favorites, Last Played and Custom Collections images was sourced from [Rick Patrick](https://www.softicons.com/designers/rick-patrick)
 
 ## **License**
