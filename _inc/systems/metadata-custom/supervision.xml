@@ -1,7 +1,0 @@
-<theme>
-   <view name="gamelist">
-      <grid name="grid">
-         <imageType>screenshot,cover</imageType>
-      </grid>
-   </view>s
-</theme>

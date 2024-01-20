@@ -18,10 +18,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    <include>./_inc/systems/metadata-custom/_default.xml</include>
    <include>./_inc/systems/metadata-custom/${system.theme}.xml</include>
 
-   <view name="
-      system,
-      gamelist
-      ">
+   <view name="system, gamelist">
       <image name="background">
          <origin>0 0</origin>
          <pos>0 0</pos>
@@ -31,11 +28,11 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <zIndex>0</zIndex>
       </image>
       <image name="menu-bar">
-         <size>1 0.111111111111111</size><!-- 100% 80 -->
          <path>${spacerImage}</path>
          <tile>true</tile>
          <color>000000</color>
          <zIndex>2</zIndex>
+         <size>${menuBarSize}</size>
       </image>
       <image name="menu-bar-shadow">
          <size>1 0.002777777777778</size><!-- 100% 2 -->
@@ -54,18 +51,14 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <zIndex>4</zIndex>
          <stationary>withinView</stationary>
       </image>
-      <text name="
-         menu-title-system,
-         custom-collection-name,
-         game-count
-         ">
-         <fontSize>0.021333333333333</fontSize>
+      <text name="menu-title-system, custom-collection-name, game-count">
+         <fontSize>${menuBarFontSize}</fontSize>
          <fontPath>${fontRegular}</fontPath>
          <lineSpacing>1</lineSpacing>
          <stationary>withinView</stationary>
       </text>
       <helpsystem name="help">
-         <fontSize>0.025</fontSize>
+         <fontSize>${helpFontSize}</fontSize>
          <textColor>ffffff99</textColor>
          <iconColor>ffffff77</iconColor>
          <customButtonIcon button="dpad_updown">./_inc/images/help-dpad-updown.svg</customButtonIcon>
@@ -90,6 +83,20 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <customButtonIcon button="thumbstick_click">./_inc/images/help-left-stick-click.svg</customButtonIcon>
       </helpsystem>
    </view>
+   <fontSize name="medium">
+      <variables>
+         <menuBarSize>1 0.111111111111111</menuBarSize><!-- 100% 80 -->
+         <menuBarFontSize>0.022222222222222</menuBarFontSize><!-- 16 -->
+         <helpFontSize>0.025</helpFontSize><!-- 18 -->
+      </variables>
+   </fontSize>
+   <fontSize name="large">
+      <variables>
+         <menuBarSize>1 0.166666666666667</menuBarSize><!-- 100% 120 -->
+         <menuBarFontSize>0.036111111111111</menuBarFontSize><!-- 26 -->
+         <helpFontSize>0.041666666666667</helpFontSize><!-- 30 -->
+      </variables>
+   </fontSize>
 
    <view name="system">
       <image name="background">
@@ -119,8 +126,9 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <fontPath>${fontBold}</fontPath>
          <letterCaseAutoCollections>capitalize</letterCaseAutoCollections>
          <fastScrolling>true</fastScrolling>
+         <zIndex>1</zIndex>
       </carousel>
-      <image name="avatar-image,avatar-mask">
+      <image name="avatar-image, avatar-mask">
          <origin>0 1</origin>
          <pos>0 1</pos>
       </image>
@@ -130,7 +138,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </image>
       <image name="menu-bar-shadow">
          <origin>0 1</origin>
-         <pos>0 0.888888888888889</pos><!-- 0 640 -->
+         <pos>${menuBarSystemShadowPos}</pos>
       </image>
       <text name="menu-title-system">
          <origin>0 1</origin>
@@ -143,30 +151,38 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <color>777777</color>
          <systemdata>gamecount</systemdata>
       </text>
-      <helpsystem name="help">
-         <origin>1 1</origin>
-      </helpsystem>
    </view>
-   <variant name="
-      system-view-controllers,
-      system-view-controllers-flat-background
-      ">
+   <variant name="system-view-controllers, system-view-controllers-flat-background">
       <view name="system">
          <carousel name="carousel">
             <staticImage>./_inc/systems/controllers/${system.theme}.png</staticImage>
          </carousel>
       </view>
    </variant>
-   <variant name="
-      system-view-colorful,
-      system-view-colorful-flat-background
-      ">
+   <variant name="system-view-colorful, system-view-colorful-flat-background">
       <view name="system">
          <carousel name="carousel">
             <staticImage>./_inc/systems/colorful/${system.theme}.webp</staticImage>
          </carousel>
       </view>
    </variant>
+   <variant name="system-view-custom">
+      <view name="system">
+         <carousel name="carousel">
+            <staticImage>./customizations/systems/${system.theme}.png</staticImage>
+         </carousel>
+      </view>
+   </variant>
+   <fontSize name="medium">
+      <variables>
+         <menuBarSystemShadowPos>0 0.888888888888889</menuBarSystemShadowPos><!-- 0 640 -->
+      </variables>
+   </fontSize>
+   <fontSize name="large">
+      <variables>
+         <menuBarSystemShadowPos>0 0.833333333333333</menuBarSystemShadowPos><!-- 0 600 -->
+      </variables>
+   </fontSize>
 
    <include>./_inc/systems/coversize/${systemCoverSize}.xml</include>
    <view name="gamelist">
@@ -179,25 +195,24 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </image>
       <image name="menu-bar-shadow">
          <origin>0 0</origin>
-         <pos>0 0.111111111111111</pos><!-- 0 80 -->
+         <pos>${menuBarGamelistShadowPos}</pos>
       </image>
-      <image name="avatar-image,avatar-mask">
+      <image name="avatar-image, avatar-mask">
          <origin>0 0</origin>
          <pos>0 0</pos>
       </image>
-      <text name="
-         menu-title-system,
-         custom-collection-name
-         ">
-         <fontPath>${fontRegular}</fontPath>
+      <text name="menu-title-system, custom-collection-name">
          <color>777777</color>
       </text>
       <text name="menu-title-system">
          <text>${systemName}</text>
       </text>
+      <text name="custom-collection-name">
+         <fontPath>${fontBold}</fontPath>
+      </text>
       <text name="game-name">
          <origin>0 0</origin>
-         <fontSize>0.021333333333333</fontSize>
+         <fontSize>${menuBarFontSize}</fontSize>
          <fontPath>${fontBold}</fontPath>
          <color>ffffff</color>
          <metadata>name</metadata>
@@ -205,14 +220,12 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <stationary>withinView</stationary>
          <container>true</container>
          <containerType>horizontal</containerType>
+         <systemNameSuffix>false</systemNameSuffix>
       </text>
-      <helpsystem name="help">
-         <origin>1 0</origin>
-      </helpsystem>
       <grid name="grid">
          <origin>0 0</origin>
-         <pos>0 0.111111111111111</pos><!-- 0 80 -->
-         <size>1 0.888888888888889</size><!-- 100% 640 -->
+         <pos>${gamelistGridPos}</pos>
+         <size>${gamelistGridSize}</size>
          <itemScale>1.2</itemScale>
          <scaleInwards>true</scaleInwards>
          <itemSpacing>0 0</itemSpacing>
@@ -222,52 +235,95 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <fractionalRows>true</fractionalRows>
          <textColor>ffffff</textColor>
          <textBackgroundColor>222222</textBackgroundColor>
+         <backgroundColor>111111</backgroundColor>
          <fontPath>${fontBold}</fontPath>
-         <fontSize>0.03</fontSize>
+         <fontSize>${gamelistGridFontSize}</fontSize>
          <selectorImage>./_inc/systems/coversize/${systemCoverSize}.svg</selectorImage>
          <selectorColor>ffffff</selectorColor>
-         <imageFit>cover</imageFit>
          <imageRelativeScale>1</imageRelativeScale>
       </grid>
    </view>
+   <fontSize name="medium">
+      <variables>
+         <menuBarGamelistShadowPos>0 0.111111111111111</menuBarGamelistShadowPos><!-- 0 80 -->
+         <gamelistGridPos>0 0.111111111111111</gamelistGridPos><!-- 0 80 -->
+         <gamelistGridSize>1 0.888888888888889</gamelistGridSize><!-- 100% 640 -->
+         <gamelistGridFontSize>0.030555555555556</gamelistGridFontSize><!-- 22-->
+      </variables>
+   </fontSize>
+   <fontSize name="large">
+      <variables>
+         <menuBarGamelistShadowPos>0 0.166666666666667</menuBarGamelistShadowPos><!-- 0 120 -->
+         <gamelistGridPos>0 0.166666666666667</gamelistGridPos><!-- 0 120 -->
+         <gamelistGridSize>1 0.833333333333333</gamelistGridSize><!-- 100% 600 -->
+         <gamelistGridFontSize>0.036111111111111</gamelistGridFontSize><!-- 26 -->
+      </variables>
+   </fontSize>
 
    <aspectRatio name="16:9">
       <view name="system,gamelist">
-         <image name="avatar-image,avatar-mask">
-            <size>0.0625 0.111111111111111</size><!-- 80 80 -->
+         <image name="avatar-image, avatar-mask">
+            <size>${avatarSize}</size>
          </image>
       </view>
       <view name="system">
          <text name="menu-title-system">
-            <pos>0.0625 0.938888888888889</pos><!-- 80 676 -->
+            <pos>${menuBarSystemTitlePos}</pos>
          </text>
          <text name="game-count">
-            <pos>0.0625 0.966666666666667</pos><!-- 80 696 -->
+            <pos>${menuBarSystemSubTitlePos}</pos>
          </text>
          <helpsystem name="help">
-            <pos>0.98125 0.954166666666667</pos><!-- 1256 687 -->
+            <origin>${helpSystemOrigin}</origin>
+            <pos>${helpSystemPos}</pos>
          </helpsystem>
       </view>
       <view name="gamelist">
          <text name="menu-title-system">
-            <pos>0.0625 0.027777777777778</pos><!-- 80 20-->
+            <pos>${menuBarGamelistTitlePos}</pos>
          </text>
          <text name="custom-collection-name">
-            <pos>0.19 0.027777777777778</pos>
+            <pos>${menuBarGamelistCollectionTitlePos}</pos>
          </text>
          <text name="game-name">
-            <pos>0.0625 0.055555555555556</pos><!-- 80 40 -->
-            <size>0.3 0.021333333333333</size>
+            <pos>${menuBarGamelistSubTitlePos}</pos>
+            <size>0.3 0</size>
          </text>
          <helpsystem name="help">
-            <pos>0.982 0.045833333333333</pos>
+            <origin>${helpGamelistOrigin}</origin>
+            <pos>${helpGamelistPos}</pos>
          </helpsystem>
       </view>
+      <fontSize name="medium">
+         <variables>
+            <avatarSize>0.0625 0.111111111111111</avatarSize><!-- 80 80 -->
+            <menuBarSystemTitlePos>0.0625 0.938888888888889</menuBarSystemTitlePos><!-- 80 676 -->
+            <menuBarSystemSubTitlePos>0.0625 0.966666666666667</menuBarSystemSubTitlePos><!-- 80 696 -->
+            <menuBarGamelistTitlePos>0.0625 0.027777777777778</menuBarGamelistTitlePos><!-- 80 20-->
+            <menuBarGamelistCollectionTitlePos>0.140625 0.027777777777778</menuBarGamelistCollectionTitlePos><!-- 180 20-->
+            <menuBarGamelistSubTitlePos>0.0625 0.055555555555556</menuBarGamelistSubTitlePos><!-- 80 40 -->
+            <helpSystemOrigin>1 0.5</helpSystemOrigin>
+            <helpSystemPos>0.98125 0.944444444444444</helpSystemPos>
+            <helpGamelistOrigin>1 0.5</helpGamelistOrigin>
+            <helpGamelistPos>0.982 0.055555555555556</helpGamelistPos>
+         </variables>
+      </fontSize>
+      <fontSize name="large">
+         <variables>
+            <avatarSize>0.09375 0.166666666666667</avatarSize><!-- 120 120 -->
+            <menuBarSystemTitlePos>0.09375 0.911111111111111</menuBarSystemTitlePos><!-- 120 656 -->
+            <menuBarSystemSubTitlePos>0.09375 0.958333333333333</menuBarSystemSubTitlePos><!-- 120 690 -->
+            <menuBarGamelistTitlePos>0.09375 0.036111111111111</menuBarGamelistTitlePos><!-- 120 26 -->
+            <menuBarGamelistCollectionTitlePos>0.21875 0.036111111111111</menuBarGamelistCollectionTitlePos><!-- 280 26-->
+            <menuBarGamelistSubTitlePos>0.09375 0.083333333333333</menuBarGamelistSubTitlePos><!-- 120 60 -->
+            <helpSystemOrigin>1 0.5</helpSystemOrigin>
+            <helpSystemPos>0.98125 0.916666666666667</helpSystemPos>
+            <helpGamelistOrigin>0 0</helpGamelistOrigin>
+            <helpGamelistPos>1 1</helpGamelistPos>
+         </variables>
+      </fontSize>
    </aspectRatio>
-   <variant name="
-      system-view-controllers,
-      system-view-controllers-flat-background
-      ">
+   <variant name="system-view-controllers, system-view-controllers-flat-background">
       <aspectRatio name="16:9">
          <view name="system">
             <carousel name="carousel">
@@ -277,10 +333,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          </view>
       </aspectRatio>
    </variant>
-   <variant name="
-      system-view-colorful,
-      system-view-colorful-flat-background
-      ">
+   <variant name="system-view-colorful, system-view-colorful-flat-background">
       <aspectRatio name="16:9">
          <view name="system">
             <carousel name="carousel">
@@ -290,44 +343,82 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          </view>
       </aspectRatio>
    </variant>
+   <variant name="system-view-custom">
+      <aspectRatio name="16:9">
+         <view name="system">
+            <carousel name="carousel">
+               <pos>0 0.45</pos>
+               <itemSize>1 1</itemSize>
+               <imageFit>cover</imageFit>
+            </carousel>
+         </view>
+      </aspectRatio>
+   </variant>
 
    <aspectRatio name="16:10">
       <view name="system,gamelist">
          <image name="avatar-image,avatar-mask">
-            <size>0.069444444444444 0.111111111111111</size><!-- 80 80 -->
+            <size>${avatarSize}</size>
          </image>
       </view>
       <view name="system">
          <text name="menu-title-system">
-            <pos>0.069444444444444 0.938888888888889</pos><!-- 80 676 -->
+            <pos>${menuBarSystemTitlePos}</pos>
          </text>
          <text name="game-count">
-            <pos>0.069444444444444 0.966666666666667</pos><!-- 80 696 -->
+            <pos>${menuBarSystemSubTitlePos}</pos>
          </text>
          <helpsystem name="help">
-            <pos>0.979166666666667 0.954166666666667</pos><!-- 1256 687 -->
+            <origin>${helpSystemOrigin}</origin>
+            <pos>${helpSystemPos}</pos>
          </helpsystem>
       </view>
       <view name="gamelist">
          <text name="menu-title-system">
-            <pos>0.069444444444444 0.027777777777778</pos><!-- 80 20-->
+            <pos>${menuBarGamelistTitlePos}</pos>
          </text>
          <text name="custom-collection-name">
-            <pos>0.21 0.027777777777778</pos>
+            <pos>${menuBarGamelistCollectionTitlePos}</pos>
          </text>
          <text name="game-name">
-            <pos>0.069444444444444 0.055555555555556</pos><!-- 80 40 -->
-            <size>0.3 0.021333333333333</size>
+            <pos>${menuBarGamelistSubTitlePos}</pos>
+            <size>0.3 0</size>
          </text>
          <helpsystem name="help">
-            <pos>0.979166666666667 0.045833333333333</pos>
+            <origin>${helpGamelistOrigin}</origin>
+            <pos>${helpGamelistPos}</pos>
          </helpsystem>
       </view>
+      <fontSize name="medium">
+         <variables>
+            <avatarSize>0.069444444444444 0.111111111111111</avatarSize><!-- 80 80 -->
+            <menuBarSystemTitlePos>0.069444444444444 0.938888888888889</menuBarSystemTitlePos><!-- 80 676 -->
+            <menuBarSystemSubTitlePos>0.069444444444444 0.966666666666667</menuBarSystemSubTitlePos><!-- 80 696 -->
+            <menuBarGamelistTitlePos>0.069444444444444 0.027777777777778</menuBarGamelistTitlePos><!-- 80 20-->
+            <menuBarGamelistCollectionTitlePos>0.21 0.027777777777778</menuBarGamelistCollectionTitlePos><!-- 180 20-->
+            <menuBarGamelistSubTitlePos>0.069444444444444 0.055555555555556</menuBarGamelistSubTitlePos><!-- 80 40 -->
+            <helpSystemOrigin>1 0.5</helpSystemOrigin>
+            <helpSystemPos>0.979166666666667 0.944444444444444</helpSystemPos>
+            <helpGamelistOrigin>1 0.5</helpGamelistOrigin>
+            <helpGamelistPos>0.979166666666667 0.055555555555556</helpGamelistPos>
+         </variables>
+      </fontSize>
+      <fontSize name="large">
+         <variables>
+            <avatarSize>0.104166666666667 0.166666666666667</avatarSize><!-- 120 120 -->
+            <menuBarSystemTitlePos>0.104166666666667 0.911111111111111</menuBarSystemTitlePos><!-- 120 656 -->
+            <menuBarSystemSubTitlePos>0.104166666666667 0.958333333333333</menuBarSystemSubTitlePos><!-- 120 690 -->
+            <menuBarGamelistTitlePos>0.104166666666667 0.036111111111111</menuBarGamelistTitlePos><!-- 120 26 -->
+            <menuBarGamelistCollectionTitlePos>0.239583333333333 0.036111111111111</menuBarGamelistCollectionTitlePos><!-- 276 26 -->
+            <menuBarGamelistSubTitlePos>0.104166666666667 0.083333333333333</menuBarGamelistSubTitlePos><!-- 120 60 -->
+            <helpSystemOrigin>1 0.5</helpSystemOrigin>
+            <helpSystemPos>0.979166666666667 0.916666666666667</helpSystemPos>
+            <helpGamelistOrigin>0 0</helpGamelistOrigin>
+            <helpGamelistPos>1 1</helpGamelistPos>
+         </variables>
+      </fontSize>
    </aspectRatio>
-   <variant name="
-      system-view-controllers,
-      system-view-controllers-flat-background
-      ">
+   <variant name="system-view-controllers, system-view-controllers-flat-background">
       <aspectRatio name="16:10">
          <view name="system">
             <carousel name="carousel">
@@ -337,15 +428,23 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          </view>
       </aspectRatio>
    </variant>
-   <variant name="
-      system-view-colorful,
-      system-view-colorful-flat-background
-      ">
+   <variant name="system-view-colorful, system-view-colorful-flat-background">
       <aspectRatio name="16:10">
          <view name="system">
             <carousel name="carousel">
                <pos>0 0.45</pos>
                <itemSize>1 1</itemSize>
+            </carousel>
+         </view>
+      </aspectRatio>
+   </variant>
+   <variant name="system-view-custom">
+      <aspectRatio name="16:10">
+         <view name="system">
+            <carousel name="carousel">
+               <pos>0 0.45</pos>
+               <itemSize>1 1</itemSize>
+               <imageFit>cover</imageFit>
             </carousel>
          </view>
       </aspectRatio>
@@ -354,41 +453,68 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    <aspectRatio name="4:3">
       <view name="system,gamelist">
          <image name="avatar-image,avatar-mask">
-            <size>0.083333333333333 0.111111111111111</size><!-- 80 80 -->
+            <size>${avatarSize}</size>
          </image>
       </view>
       <view name="system">
          <text name="menu-title-system">
-            <pos>0.083333333333333 0.938888888888889</pos><!-- 80 676 -->
+            <pos>${menuBarSystemTitlePos}</pos>
          </text>
          <text name="game-count">
-            <pos>0.083333333333333 0.966666666666667</pos><!-- 80 696 -->
+            <pos>${menuBarSystemSubTitlePos}</pos>
          </text>
          <helpsystem name="help">
-            <pos>0.979166666666667 0.954166666666667</pos><!-- 1256 687 -->
+            <origin>${helpSystemOrigin}</origin>
+            <pos>${helpSystemPos}</pos>
          </helpsystem>
       </view>
       <view name="gamelist">
          <text name="menu-title-system">
-            <pos>0.083333333333333 0.027777777777778</pos><!-- 80 20-->
+            <pos>${menuBarGamelistTitlePos}</pos>
          </text>
          <text name="custom-collection-name">
-            <pos>0.21 0.027777777777778</pos>
+            <pos>${menuBarGamelistCollectionTitlePos}</pos>
          </text>
          <text name="game-name">
-            <pos>0.083333333333333 0.055555555555556</pos><!-- 80 40 -->
-            <size>0.3 0.021333333333333</size>
+            <pos>${menuBarGamelistSubTitlePos}</pos>
+            <size>0.5 0</size>
          </text>
          <helpsystem name="help">
+            <origin>${helpGamelistOrigin}</origin>
+            <pos>${helpGamelistPos}</pos>
             <fontSize>0.02</fontSize>
-            <pos>0.979166666666667 0.045833333333333</pos>
          </helpsystem>
       </view>
+      <fontSize name="medium">
+         <variables>
+            <avatarSize>0.083333333333333 0.111111111111111</avatarSize><!-- 80 80 -->
+            <menuBarSystemTitlePos>0.083333333333333 0.938888888888889</menuBarSystemTitlePos><!-- 80 676 -->
+            <menuBarSystemSubTitlePos>0.083333333333333 0.966666666666667</menuBarSystemSubTitlePos><!-- 80 696 -->
+            <menuBarGamelistTitlePos>0.083333333333333 0.027777777777778</menuBarGamelistTitlePos><!-- 80 20-->
+            <menuBarGamelistCollectionTitlePos>0.18125 0.027777777777778</menuBarGamelistCollectionTitlePos><!-- 180 20-->
+            <menuBarGamelistSubTitlePos>0.083333333333333 0.055555555555556</menuBarGamelistSubTitlePos><!-- 80 40 -->
+            <helpSystemOrigin>1 0.5</helpSystemOrigin>
+            <helpSystemPos>0.979166666666667 0.944444444444444</helpSystemPos>
+            <helpGamelistOrigin>1 0.5</helpGamelistOrigin>
+            <helpGamelistPos>0.979166666666667 0.055555555555556</helpGamelistPos>
+         </variables>
+      </fontSize>
+      <fontSize name="large">
+         <variables>
+            <avatarSize>0.125 0.166666666666667</avatarSize><!-- 120 120 -->
+            <menuBarSystemTitlePos>0.125 0.911111111111111</menuBarSystemTitlePos><!-- 120 656 -->
+            <menuBarSystemSubTitlePos>0.125 0.958333333333333</menuBarSystemSubTitlePos><!-- 120 690 -->
+            <menuBarGamelistTitlePos>0.125 0.036111111111111</menuBarGamelistTitlePos><!-- 120 26 -->
+            <menuBarGamelistCollectionTitlePos>0.291666666666667 0.036111111111111</menuBarGamelistCollectionTitlePos><!-- 280 26 -->
+            <menuBarGamelistSubTitlePos>0.125 0.083333333333333</menuBarGamelistSubTitlePos><!-- 120 60 -->
+            <helpSystemOrigin>0 0</helpSystemOrigin>
+            <helpSystemPos>1 1</helpSystemPos>
+            <helpGamelistOrigin>0 0</helpGamelistOrigin>
+            <helpGamelistPos>1 1</helpGamelistPos>
+         </variables>
+      </fontSize>
    </aspectRatio>
-   <variant name="
-      system-view-controllers,
-      system-view-controllers-flat-background
-      ">
+   <variant name="system-view-controllers, system-view-controllers-flat-background">
       <aspectRatio name="4:3">
          <view name="system">
             <carousel name="carousel">
@@ -398,15 +524,23 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          </view>
       </aspectRatio>
    </variant>
-   <variant name="
-      system-view-colorful,
-      system-view-colorful-flat-background
-      ">
+   <variant name="system-view-colorful, system-view-colorful-flat-background">
       <aspectRatio name="4:3">
          <view name="system">
             <carousel name="carousel">
                <pos>0 0.45</pos>
                <itemSize>1 1</itemSize>
+            </carousel>
+         </view>
+      </aspectRatio>
+   </variant>
+   <variant name="system-view-custom">
+      <aspectRatio name="4:3">
+         <view name="system">
+            <carousel name="carousel">
+               <pos>0 0.45</pos>
+               <itemSize>1 1</itemSize>
+               <imageFit>cover</imageFit>
             </carousel>
          </view>
       </aspectRatio>
@@ -416,6 +550,17 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       <view name="system">
          <image name="background-art">
             <color>ffffff00</color>
+         </image>
+      </view>
+   </variant>
+
+   <variant name="system-view-custom">
+      <view name="system">
+         <image name="background-art">
+            <color>ffffff00</color>
+         </image>
+         <image name="background">
+            <color>000000</color>
          </image>
       </view>
    </variant>
@@ -492,7 +637,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    </colorScheme>
    <colorScheme name="avatar-custom">
       <variables>
-         <avatarImage>~/.emulationstation/theme-customizations/nso-menu-interpreted/custom-avatar.png</avatarImage>
+         <avatarImage>./customizations/custom-avatar.png</avatarImage>
       </variables>
    </colorScheme>
 

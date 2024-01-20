@@ -2,6 +2,7 @@
    <view name="gamelist">
       <grid name="grid">
          <imageType>cover,screenshot</imageType>
+         <imageFit>cover</imageFit>
       </grid>
    </view>
 </theme>

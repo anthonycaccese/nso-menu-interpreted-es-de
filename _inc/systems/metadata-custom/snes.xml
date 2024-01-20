@@ -1,7 +1,5 @@
 <theme>
-   <view name="gamelist">
-      <grid name="grid">
-         <imageType>cover,screenshot</imageType>
-      </grid>
-   </view>
+   <variables>
+      <systemName>Super Nintendo</systemName>
+   </variables>
 </theme>
