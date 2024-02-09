@@ -7,17 +7,32 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
 
 <theme>
 
+   <!--
+   ///
+   System Metadata
+   ///
+   -->
+   <include>./_inc/systems/metadata-global/_default.xml</include>
+   <include>./_inc/systems/metadata-global/${system.theme}.xml</include>
+   <include>./_inc/systems/metadata-custom/_default.xml</include>
+   <include>./_inc/systems/metadata-custom/${system.theme}.xml</include>
+
+   <!--
+   ///
+   Variables
+   ///
+   -->
    <variables>
       <spacerImage>./_inc/images/space.png</spacerImage>
       <fontRegular>./_inc/fonts/AOTFShinGoProRegular.otf</fontRegular>
       <fontBold>./_inc/fonts/AOTFShinGoProDeBold.otf</fontBold>
    </variables>
 
-   <include>./_inc/systems/metadata-global/_default.xml</include>
-   <include>./_inc/systems/metadata-global/${system.theme}.xml</include>
-   <include>./_inc/systems/metadata-custom/_default.xml</include>
-   <include>./_inc/systems/metadata-custom/${system.theme}.xml</include>
-
+   <!--
+   ///
+   All Views
+   ///
+   -->
    <view name="system, gamelist">
       <image name="background">
          <origin>0 0</origin>
@@ -61,9 +76,6 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <fontSize>${helpFontSize}</fontSize>
          <textColor>ffffff99</textColor>
          <iconColor>ffffff77</iconColor>
-         <customButtonIcon button="dpad_updown">./_inc/images/help-dpad-updown.svg</customButtonIcon>
-         <customButtonIcon button="dpad_leftright">./_inc/images/help-dpad-leftright.svg</customButtonIcon>
-         <customButtonIcon button="dpad_all">./_inc/images/help-dpad-updownleftright.svg</customButtonIcon>
          <customButtonIcon button="button_a_XBOX">./_inc/images/help-button-south.svg</customButtonIcon>
          <customButtonIcon button="button_a_PS">./_inc/images/help-button-south.svg</customButtonIcon>
          <customButtonIcon button="button_a_switch">./_inc/images/help-button-east.svg</customButtonIcon>
@@ -98,6 +110,11 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </variables>
    </fontSize>
 
+   <!--
+   ///
+   System View
+   ///
+   -->
    <view name="system">
       <image name="background">
          <color>${systemColor}</color>
@@ -152,6 +169,22 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <systemdata>gamecount</systemdata>
       </text>
    </view>
+   <fontSize name="medium">
+      <variables>
+         <menuBarSystemShadowPos>0 0.888888888888889</menuBarSystemShadowPos><!-- 0 640 -->
+      </variables>
+   </fontSize>
+   <fontSize name="large">
+      <variables>
+         <menuBarSystemShadowPos>0 0.833333333333333</menuBarSystemShadowPos><!-- 0 600 -->
+      </variables>
+   </fontSize>
+
+   <!--
+   ///
+   System View: Variants
+   ///
+   -->
    <variant name="system-view-controllers, system-view-controllers-flat-background">
       <view name="system">
          <carousel name="carousel">
@@ -166,24 +199,32 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          </carousel>
       </view>
    </variant>
+   <variant name="system-view-controllers-flat-background,system-view-colorful-flat-background">
+      <view name="system">
+         <image name="background-art">
+            <color>ffffff00</color>
+         </image>
+      </view>
+   </variant>
    <variant name="system-view-custom">
       <view name="system">
          <carousel name="carousel">
             <staticImage>./customizations/systems/${system.theme}.png</staticImage>
          </carousel>
+         <image name="background-art">
+            <color>ffffff00</color>
+         </image>
+         <image name="background">
+            <color>000000</color>
+         </image>
       </view>
    </variant>
-   <fontSize name="medium">
-      <variables>
-         <menuBarSystemShadowPos>0 0.888888888888889</menuBarSystemShadowPos><!-- 0 640 -->
-      </variables>
-   </fontSize>
-   <fontSize name="large">
-      <variables>
-         <menuBarSystemShadowPos>0 0.833333333333333</menuBarSystemShadowPos><!-- 0 600 -->
-      </variables>
-   </fontSize>
 
+   <!--
+   ///
+   Gamelist View
+   ///
+   -->
    <include>./_inc/systems/coversize/${systemCoverSize}.xml</include>
    <view name="gamelist">
       <image name="background">
@@ -260,6 +301,11 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </variables>
    </fontSize>
 
+   <!--
+   ///
+   Aspect Ratio: 16:9
+   ///
+   -->
    <aspectRatio name="16:9">
       <view name="system,gamelist">
          <image name="avatar-image, avatar-mask">
@@ -355,6 +401,11 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </aspectRatio>
    </variant>
 
+   <!--
+   ///
+   Aspect Ratio: 16:10
+   ///
+   -->
    <aspectRatio name="16:10">
       <view name="system,gamelist">
          <image name="avatar-image,avatar-mask">
@@ -450,6 +501,11 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </aspectRatio>
    </variant>
 
+   <!--
+   ///
+   Aspect Ratio: 4:3
+   ///
+   -->
    <aspectRatio name="4:3">
       <view name="system,gamelist">
          <image name="avatar-image,avatar-mask">
@@ -546,25 +602,11 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </aspectRatio>
    </variant>
 
-   <variant name="system-view-controllers-flat-background,system-view-colorful-flat-background">
-      <view name="system">
-         <image name="background-art">
-            <color>ffffff00</color>
-         </image>
-      </view>
-   </variant>
-
-   <variant name="system-view-custom">
-      <view name="system">
-         <image name="background-art">
-            <color>ffffff00</color>
-         </image>
-         <image name="background">
-            <color>000000</color>
-         </image>
-      </view>
-   </variant>
-
+   <!--
+   ///
+   Color Schemes
+   ///
+   -->
    <colorScheme name="avatar-link">
       <variables>
          <avatarImage>./_inc/images/avatars/link.png</avatarImage>
@@ -640,5 +682,34 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <avatarImage>./customizations/custom-avatar.png</avatarImage>
       </variables>
    </colorScheme>
+
+   <!--
+   ///
+   Sounds
+   ///
+   -->
+   <view name="all">
+      <sound name="systembrowse">
+         <path>./_inc/sounds/systembrowse.wav</path>
+      </sound>
+      <sound name="quicksysselect">
+         <path>./_inc/sounds/quicksysselect.wav</path>
+      </sound>
+      <sound name="select">
+         <path>./_inc/sounds/select.wav</path>
+      </sound>
+      <sound name="back">
+         <path>./_inc/sounds/back.wav</path>
+      </sound>
+      <sound name="scroll">
+         <path>./_inc/sounds/scroll.wav</path>
+      </sound>
+      <sound name="favorite">
+         <path>./_inc/sounds/favorite.wav</path>
+      </sound>
+      <sound name="launch">
+         <path>./_inc/sounds/launch.wav</path>
+      </sound>
+   </view>
 
 </theme>
