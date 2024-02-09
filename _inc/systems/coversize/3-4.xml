@@ -2,7 +2,7 @@
    <aspectRatio name="16:9">
       <view name="gamelist">
          <grid name="grid">
-            <itemSize>0.2 0.5</itemSize><!-- 256 350 -->
+            <itemSize>0.1999999 0.5</itemSize><!-- 256 350 -->
          </grid>
       </view>
    </aspectRatio>

@@ -9,6 +9,12 @@
    <fontSize>medium</fontSize>
    <fontSize>large</fontSize>
 
+   <colorScheme name="avatar-es-de">
+      <label>ES-DE Avatar</label>
+   </colorScheme>
+   <colorScheme name="avatar-custom">
+      <label>Custom Avatar</label>
+   </colorScheme>
    <colorScheme name="avatar-link">
       <label>Link Avatar</label>
    </colorScheme>
@@ -48,12 +54,6 @@
    <colorScheme name="avatar-isabelle">
       <label>Isabelle Avatar</label>
    </colorScheme>
-   <colorScheme name="avatar-es-de">
-      <label>ES-DE Avatar</label>
-   </colorScheme>
-   <colorScheme name="avatar-custom">
-      <label>Custom Avatar</label>
-   </colorScheme>
 
    <transitions name="transitions">
       <label>transitions</label>
@@ -72,23 +72,23 @@
    </suppressTransitionProfiles>
 
    <variant name="system-view-controllers-flat-background">
-      <label>Controllers (Flat Color)</label>
-      <selectable>true</selectable>
-   </variant>
-   <variant name="system-view-controllers">
-      <label>Controllers</label>
+      <label>Controller Images</label>
       <selectable>true</selectable>
    </variant>
    <variant name="system-view-colorful-flat-background">
-      <label>Colorful (Flat Color)</label>
+      <label>Colorful Images</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="system-view-controllers">
+      <label>Controller Images + Screenshot</label>
       <selectable>true</selectable>
    </variant>
    <variant name="system-view-colorful">
-      <label>Colorful</label>
+      <label>Colorful Images + Screenshot</label>
       <selectable>true</selectable>
    </variant>
    <variant name="system-view-custom">
-      <label>Custom</label>
+      <label>Custom Images</label>
       <selectable>true</selectable>
    </variant>
 
