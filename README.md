@@ -1,5 +1,5 @@
 # NSO Menu Interpreted (ES-DE Version)
-A simple theme for the version of EmulationStation used in [ES-DE](https://es-de.org/) v2.x.  The design is inspired by the Menu UI from [Nintendo Switch Online](https://en.wikipedia.org/wiki/Nintendo_Switch_Online).  It includes a custom grid view built to match the cover artwork for each supported system.
+A simple theme for the version of EmulationStation used in [ES-DE](https://es-de.org/)  The design is inspired by the Menu UI from [Nintendo Switch Online](https://en.wikipedia.org/wiki/Nintendo_Switch_Online).  It includes a custom grid view built to match the cover artwork for each supported system.
 
 This theme was created in collaboration with [@rogs123](https://github.com/rogs123)
 
