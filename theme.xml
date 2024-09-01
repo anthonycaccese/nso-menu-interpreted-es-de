@@ -167,6 +167,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <origin>0 1</origin>
          <color>777777</color>
          <systemdata>gamecount</systemdata>
+         <letterCase>capitalize</letterCase>
       </text>
    </view>
    <fontSize name="medium">
