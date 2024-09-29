@@ -15,45 +15,6 @@
    <colorScheme name="avatar-custom">
       <label>Custom Avatar</label>
    </colorScheme>
-   <colorScheme name="avatar-link">
-      <label>Link Avatar</label>
-   </colorScheme>
-   <colorScheme name="avatar-zelda">
-      <label>Zelda Avatar</label>
-   </colorScheme>
-   <colorScheme name="avatar-gannon">
-      <label>Gannon Avatar</label>
-   </colorScheme>
-   <colorScheme name="avatar-mario">
-      <label>Mario Avatar</label>
-   </colorScheme>
-   <colorScheme name="avatar-luigi">
-      <label>Luigi Avatar</label>
-   </colorScheme>
-   <colorScheme name="avatar-peach">
-      <label>Peach Avatar</label>
-   </colorScheme>
-   <colorScheme name="avatar-yoshi">
-      <label>Yoshi Avatar</label>
-   </colorScheme>
-   <colorScheme name="avatar-donkeykong">
-      <label>Donkey Kong Avatar</label>
-   </colorScheme>
-   <colorScheme name="avatar-bowser">
-      <label>Bowser Avatar</label>
-   </colorScheme>
-   <colorScheme name="avatar-questionblock">
-      <label>Question Block Avatar</label>
-   </colorScheme>
-   <colorScheme name="avatar-tomnook">
-      <label>Tom Nook Avatar</label>
-   </colorScheme>
-   <colorScheme name="avatar-kkslider">
-      <label>K.K. Slider Avatar</label>
-   </colorScheme>
-   <colorScheme name="avatar-isabelle">
-      <label>Isabelle Avatar</label>
-   </colorScheme>
 
    <transitions name="transitions">
       <label>transitions</label>
