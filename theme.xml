@@ -72,41 +72,47 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <lineSpacing>1</lineSpacing>
          <stationary>withinView</stationary>
       </text>
-      <helpsystem name="help">
-         <fontSize>${helpFontSize}</fontSize>
-         <textColor>ffffff99</textColor>
-         <iconColor>ffffff77</iconColor>
-         <customButtonIcon button="button_a_XBOX">./_inc/images/help-button-south.svg</customButtonIcon>
-         <customButtonIcon button="button_a_PS">./_inc/images/help-button-south.svg</customButtonIcon>
-         <customButtonIcon button="button_a_switch">./_inc/images/help-button-east.svg</customButtonIcon>
-         <customButtonIcon button="button_a_SNES">./_inc/images/help-button-south.svg</customButtonIcon>
-         <customButtonIcon button="button_b_XBOX">./_inc/images/help-button-east.svg</customButtonIcon>
-         <customButtonIcon button="button_b_PS">./_inc/images/help-button-east.svg</customButtonIcon>
-         <customButtonIcon button="button_b_switch">./_inc/images/help-button-south.svg</customButtonIcon>
-         <customButtonIcon button="button_b_SNES">./_inc/images/help-button-east.svg</customButtonIcon>
-         <customButtonIcon button="button_x_XBOX">./_inc/images/help-button-west.svg</customButtonIcon>
-         <customButtonIcon button="button_x_PS">./_inc/images/help-button-west.svg</customButtonIcon>
-         <customButtonIcon button="button_x_switch">./_inc/images/help-button-north.svg</customButtonIcon>
-         <customButtonIcon button="button_x_SNES">./_inc/images/help-button-west.svg</customButtonIcon>
-         <customButtonIcon button="button_y_XBOX">./_inc/images/help-button-north.svg</customButtonIcon>
-         <customButtonIcon button="button_y_PS">./_inc/images/help-button-north.svg</customButtonIcon>
-         <customButtonIcon button="button_y_switch">./_inc/images/help-button-west.svg</customButtonIcon>
-         <customButtonIcon button="button_y_SNES">./_inc/images/help-button-north.svg</customButtonIcon>
-         <customButtonIcon button="thumbstick_click">./_inc/images/help-left-stick-click.svg</customButtonIcon>
+      <clock name="clock">
+         <opacity>0</opacity>
+      </clock>
+      <systemstatus name="system-status">
+         <scope>view</scope>
+         <fontPath>${fontRegular}</fontPath>
+         <height>${systemStatusHeight}</height>
+         <textRelativeScale>0.5</textRelativeScale>
+         <customIcon icon="icon_bluetooth">./_inc/images/icon-bluetooth.svg</customIcon>
+         <customIcon icon="icon_wifi">./_inc/images/icon-wifi.svg</customIcon>
+         <customIcon icon="icon_cellular">./_inc/images/icon-cellular.svg</customIcon>
+         <customIcon icon="icon_battery_charging">./_inc/images/icon-battery-charging.svg</customIcon>
+         <customIcon icon="icon_battery_full">./_inc/images/icon-battery-full.svg</customIcon>
+         <customIcon icon="icon_battery_high">./_inc/images/icon-battery-high.svg</customIcon>
+         <customIcon icon="icon_battery_medium">./_inc/images/icon-battery-medium.svg</customIcon>
+         <customIcon icon="icon_battery_low">./_inc/images/icon-battery-low.svg</customIcon>
+      </systemstatus>
+      <helpsystem name="help-menu-view">
+         <scope>menu</scope>
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.95</pos>
+         <iconColor>cccccc</iconColor>
+         <textColor>cccccc</textColor>
+         <backgroundColor>181818</backgroundColor>
+         <backgroundHorizontalPadding>0.05 0.05</backgroundHorizontalPadding>
+         <backgroundVerticalPadding>0.05 0.05</backgroundVerticalPadding>
+         <backgroundCornerRadius>0.005</backgroundCornerRadius>
       </helpsystem>
    </view>
    <fontSize name="medium">
       <variables>
          <menuBarSize>1 0.111111111111111</menuBarSize><!-- 100% 80 -->
          <menuBarFontSize>0.022222222222222</menuBarFontSize><!-- 16 -->
-         <helpFontSize>0.025</helpFontSize><!-- 18 -->
+         <systemStatusHeight>0.04</systemStatusHeight>
       </variables>
    </fontSize>
    <fontSize name="large">
       <variables>
          <menuBarSize>1 0.166666666666667</menuBarSize><!-- 100% 120 -->
          <menuBarFontSize>0.036111111111111</menuBarFontSize><!-- 26 -->
-         <helpFontSize>0.041666666666667</helpFontSize><!-- 30 -->
+         <systemStatusHeight>0.055</systemStatusHeight>
       </variables>
    </fontSize>
 
@@ -320,10 +326,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <text name="game-count">
             <pos>${menuBarSystemSubTitlePos}</pos>
          </text>
-         <helpsystem name="help">
-            <origin>${helpSystemOrigin}</origin>
-            <pos>${helpSystemPos}</pos>
-         </helpsystem>
+         <systemstatus name="system-status">
+            <origin>${systemStatuSystemOrigin}</origin>
+            <pos>${systemStatuSystemPos}</pos>
+         </systemstatus>
       </view>
       <view name="gamelist">
          <text name="menu-title-system">
@@ -336,10 +342,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
             <pos>${menuBarGamelistSubTitlePos}</pos>
             <size>0.3 0</size>
          </text>
-         <helpsystem name="help">
-            <origin>${helpGamelistOrigin}</origin>
-            <pos>${helpGamelistPos}</pos>
-         </helpsystem>
+         <systemstatus name="system-status">
+            <origin>${systemStatuGamelistOrigin}</origin>
+            <pos>${systemStatuGamelistPos}</pos>
+         </systemstatus>
       </view>
       <fontSize name="medium">
          <variables>
@@ -349,10 +355,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
             <menuBarGamelistTitlePos>0.0625 0.027777777777778</menuBarGamelistTitlePos><!-- 80 20-->
             <menuBarGamelistCollectionTitlePos>0.140625 0.027777777777778</menuBarGamelistCollectionTitlePos><!-- 180 20-->
             <menuBarGamelistSubTitlePos>0.0625 0.055555555555556</menuBarGamelistSubTitlePos><!-- 80 40 -->
-            <helpSystemOrigin>1 0.5</helpSystemOrigin>
-            <helpSystemPos>0.98125 0.944444444444444</helpSystemPos>
-            <helpGamelistOrigin>1 0.5</helpGamelistOrigin>
-            <helpGamelistPos>0.982 0.055555555555556</helpGamelistPos>
+            <systemStatuSystemOrigin>1 0.5</systemStatuSystemOrigin>
+            <systemStatuSystemPos>0.98125 0.944444444444444</systemStatuSystemPos>
+            <systemStatuGamelistOrigin>1 0.5</systemStatuGamelistOrigin>
+            <systemStatuGamelistPos>0.98125 0.055555555555556</systemStatuGamelistPos>
          </variables>
       </fontSize>
       <fontSize name="large">
@@ -363,10 +369,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
             <menuBarGamelistTitlePos>0.09375 0.036111111111111</menuBarGamelistTitlePos><!-- 120 26 -->
             <menuBarGamelistCollectionTitlePos>0.21875 0.036111111111111</menuBarGamelistCollectionTitlePos><!-- 280 26-->
             <menuBarGamelistSubTitlePos>0.09375 0.083333333333333</menuBarGamelistSubTitlePos><!-- 120 60 -->
-            <helpSystemOrigin>1 0.5</helpSystemOrigin>
-            <helpSystemPos>0.98125 0.916666666666667</helpSystemPos>
-            <helpGamelistOrigin>0 0</helpGamelistOrigin>
-            <helpGamelistPos>1 1</helpGamelistPos>
+            <systemStatuSystemOrigin>1 0.5</systemStatuSystemOrigin>
+            <systemStatuSystemPos>0.98125 0.916666666666667</systemStatuSystemPos>
+            <systemStatuGamelistOrigin>1 0.5</systemStatuGamelistOrigin>
+            <systemStatuGamelistPos>0.98125 0.08</systemStatuGamelistPos>
          </variables>
       </fontSize>
    </aspectRatio>
@@ -420,10 +426,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <text name="game-count">
             <pos>${menuBarSystemSubTitlePos}</pos>
          </text>
-         <helpsystem name="help">
-            <origin>${helpSystemOrigin}</origin>
-            <pos>${helpSystemPos}</pos>
-         </helpsystem>
+         <systemstatus name="system-status">
+            <origin>${systemStatuSystemOrigin}</origin>
+            <pos>${systemStatuSystemPos}</pos>
+         </systemstatus>
       </view>
       <view name="gamelist">
          <text name="menu-title-system">
@@ -436,10 +442,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
             <pos>${menuBarGamelistSubTitlePos}</pos>
             <size>0.3 0</size>
          </text>
-         <helpsystem name="help">
-            <origin>${helpGamelistOrigin}</origin>
-            <pos>${helpGamelistPos}</pos>
-         </helpsystem>
+         <systemstatus name="system-status">
+            <origin>${systemStatuGamelistOrigin}</origin>
+            <pos>${systemStatuGamelistPos}</pos>
+         </systemstatus>
       </view>
       <fontSize name="medium">
          <variables>
@@ -449,10 +455,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
             <menuBarGamelistTitlePos>0.069444444444444 0.027777777777778</menuBarGamelistTitlePos><!-- 80 20-->
             <menuBarGamelistCollectionTitlePos>0.21 0.027777777777778</menuBarGamelistCollectionTitlePos><!-- 180 20-->
             <menuBarGamelistSubTitlePos>0.069444444444444 0.055555555555556</menuBarGamelistSubTitlePos><!-- 80 40 -->
-            <helpSystemOrigin>1 0.5</helpSystemOrigin>
-            <helpSystemPos>0.979166666666667 0.944444444444444</helpSystemPos>
-            <helpGamelistOrigin>1 0.5</helpGamelistOrigin>
-            <helpGamelistPos>0.979166666666667 0.055555555555556</helpGamelistPos>
+            <systemStatuSystemOrigin>1 0.5</systemStatuSystemOrigin>
+            <systemStatuSystemPos>0.979166666666667 0.944444444444444</systemStatuSystemPos>
+            <systemStatuGamelistOrigin>1 0.5</systemStatuGamelistOrigin>
+            <systemStatuGamelistPos>0.979166666666667 0.055555555555556</systemStatuGamelistPos>
          </variables>
       </fontSize>
       <fontSize name="large">
@@ -463,10 +469,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
             <menuBarGamelistTitlePos>0.104166666666667 0.036111111111111</menuBarGamelistTitlePos><!-- 120 26 -->
             <menuBarGamelistCollectionTitlePos>0.239583333333333 0.036111111111111</menuBarGamelistCollectionTitlePos><!-- 276 26 -->
             <menuBarGamelistSubTitlePos>0.104166666666667 0.083333333333333</menuBarGamelistSubTitlePos><!-- 120 60 -->
-            <helpSystemOrigin>1 0.5</helpSystemOrigin>
-            <helpSystemPos>0.979166666666667 0.916666666666667</helpSystemPos>
-            <helpGamelistOrigin>0 0</helpGamelistOrigin>
-            <helpGamelistPos>1 1</helpGamelistPos>
+            <systemStatuSystemOrigin>1 0.5</systemStatuSystemOrigin>
+            <systemStatuSystemPos>0.979166666666667 0.916666666666667</systemStatuSystemPos>
+            <systemStatuGamelistOrigin>1 0.5</systemStatuGamelistOrigin>
+            <systemStatuGamelistPos>0.979166666666667 0.08</systemStatuGamelistPos>
          </variables>
       </fontSize>
    </aspectRatio>
@@ -520,10 +526,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <text name="game-count">
             <pos>${menuBarSystemSubTitlePos}</pos>
          </text>
-         <helpsystem name="help">
-            <origin>${helpSystemOrigin}</origin>
-            <pos>${helpSystemPos}</pos>
-         </helpsystem>
+         <systemstatus name="system-status">
+            <origin>${systemStatuSystemOrigin}</origin>
+            <pos>${systemStatuSystemPos}</pos>
+         </systemstatus>
       </view>
       <view name="gamelist">
          <text name="menu-title-system">
@@ -536,11 +542,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
             <pos>${menuBarGamelistSubTitlePos}</pos>
             <size>0.5 0</size>
          </text>
-         <helpsystem name="help">
-            <origin>${helpGamelistOrigin}</origin>
-            <pos>${helpGamelistPos}</pos>
-            <fontSize>0.02</fontSize>
-         </helpsystem>
+         <systemstatus name="system-status">
+            <origin>${systemStatuGamelistOrigin}</origin>
+            <pos>${systemStatuGamelistPos}</pos>
+         </systemstatus>
       </view>
       <fontSize name="medium">
          <variables>
@@ -550,10 +555,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
             <menuBarGamelistTitlePos>0.083333333333333 0.027777777777778</menuBarGamelistTitlePos><!-- 80 20-->
             <menuBarGamelistCollectionTitlePos>0.18125 0.027777777777778</menuBarGamelistCollectionTitlePos><!-- 180 20-->
             <menuBarGamelistSubTitlePos>0.083333333333333 0.055555555555556</menuBarGamelistSubTitlePos><!-- 80 40 -->
-            <helpSystemOrigin>1 0.5</helpSystemOrigin>
-            <helpSystemPos>0.979166666666667 0.944444444444444</helpSystemPos>
-            <helpGamelistOrigin>1 0.5</helpGamelistOrigin>
-            <helpGamelistPos>0.979166666666667 0.055555555555556</helpGamelistPos>
+            <systemStatuSystemOrigin>1 0.5</systemStatuSystemOrigin>
+            <systemStatuSystemPos>0.979166666666667 0.944444444444444</systemStatuSystemPos>
+            <systemStatuGamelistOrigin>1 0.5</systemStatuGamelistOrigin>
+            <systemStatuGamelistPos>0.979166666666667 0.055555555555556</systemStatuGamelistPos>
          </variables>
       </fontSize>
       <fontSize name="large">
@@ -564,10 +569,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
             <menuBarGamelistTitlePos>0.125 0.036111111111111</menuBarGamelistTitlePos><!-- 120 26 -->
             <menuBarGamelistCollectionTitlePos>0.291666666666667 0.036111111111111</menuBarGamelistCollectionTitlePos><!-- 280 26 -->
             <menuBarGamelistSubTitlePos>0.125 0.083333333333333</menuBarGamelistSubTitlePos><!-- 120 60 -->
-            <helpSystemOrigin>0 0</helpSystemOrigin>
-            <helpSystemPos>1 1</helpSystemPos>
-            <helpGamelistOrigin>0 0</helpGamelistOrigin>
-            <helpGamelistPos>1 1</helpGamelistPos>
+            <systemStatuSystemOrigin>1 0.5</systemStatuSystemOrigin>
+            <systemStatuSystemPos>0.979166666666667 0.916666666666667</systemStatuSystemPos>
+            <systemStatuGamelistOrigin>1 0.5</systemStatuGamelistOrigin>
+            <systemStatuGamelistPos>0.979166666666667 0.08</systemStatuGamelistPos>
          </variables>
       </fontSize>
    </aspectRatio>
@@ -615,7 +620,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    </colorScheme>
    <colorScheme name="avatar-custom">
       <variables>
-         <avatarImage>./customizations/custom-avatar.png</avatarImage>
+         <avatarImage>./theme-customizations/avatar.png</avatarImage>
       </variables>
    </colorScheme>
 
