@@ -634,6 +634,106 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
 
    <!--
    ///
+   Aspect Ratio: 1:1
+   ///
+   -->
+   <aspectRatio name="1:1">
+      <view name="system,gamelist">
+         <image name="avatar-image,avatar-mask">
+            <size>${avatarSize}</size>
+         </image>
+      </view>
+      <view name="system">
+         <text name="menu-title-system">
+            <pos>${menuBarSystemTitlePos}</pos>
+         </text>
+         <text name="game-count">
+            <pos>${menuBarSystemSubTitlePos}</pos>
+         </text>
+         <systemstatus name="system-status">
+            <origin>${systemStatuSystemOrigin}</origin>
+            <pos>${systemStatuSystemPos}</pos>
+         </systemstatus>
+      </view>
+      <view name="gamelist">
+         <text name="menu-title-system">
+            <pos>${menuBarGamelistTitlePos}</pos>
+         </text>
+         <text name="custom-collection-name">
+            <pos>${menuBarGamelistCollectionTitlePos}</pos>
+         </text>
+         <text name="game-name">
+            <pos>${menuBarGamelistSubTitlePos}</pos>
+            <size>0.5 0</size>
+         </text>
+         <systemstatus name="system-status">
+            <origin>${systemStatuGamelistOrigin}</origin>
+            <pos>${systemStatuGamelistPos}</pos>
+         </systemstatus>
+      </view>
+      <fontSize name="medium">
+         <variables>
+            <avatarSize>0.111111111111111 0.111111111111111</avatarSize><!-- 80 80 -->
+            <menuBarSystemTitlePos>0.111111111111111 0.938888888888889</menuBarSystemTitlePos><!-- 80 676 -->
+            <menuBarSystemSubTitlePos>0.111111111111111 0.966666666666667</menuBarSystemSubTitlePos><!-- 80 696 -->
+            <menuBarGamelistTitlePos>0.111111111111111 0.027777777777778</menuBarGamelistTitlePos><!-- 80 20-->
+            <menuBarGamelistCollectionTitlePos>0.25 0.027777777777778</menuBarGamelistCollectionTitlePos><!-- 180 20-->
+            <menuBarGamelistSubTitlePos>0.111111111111111 0.055555555555556</menuBarGamelistSubTitlePos><!-- 80 40 -->
+            <systemStatuSystemOrigin>1 0.5</systemStatuSystemOrigin>
+            <systemStatuSystemPos>0.97222222 0.944444444444444</systemStatuSystemPos>
+            <systemStatuGamelistOrigin>1 0.5</systemStatuGamelistOrigin>
+            <systemStatuGamelistPos>0.97222222 0.055555555555556</systemStatuGamelistPos>
+         </variables>
+      </fontSize>
+      <fontSize name="large">
+         <variables>
+            <avatarSize>0.16666667 0.166666666666667</avatarSize><!-- 120 120 -->
+            <menuBarSystemTitlePos>0.16666667 0.911111111111111</menuBarSystemTitlePos><!-- 120 656 -->
+            <menuBarSystemSubTitlePos>0.16666667 0.958333333333333</menuBarSystemSubTitlePos><!-- 120 690 -->
+            <menuBarGamelistTitlePos>0.16666667 0.036111111111111</menuBarGamelistTitlePos><!-- 120 26 -->
+            <menuBarGamelistCollectionTitlePos>0.38888889 0.036111111111111</menuBarGamelistCollectionTitlePos><!-- 280 26 -->
+            <menuBarGamelistSubTitlePos>0.16666667 0.083333333333333</menuBarGamelistSubTitlePos><!-- 120 60 -->
+            <systemStatuSystemOrigin>1 0.5</systemStatuSystemOrigin>
+            <systemStatuSystemPos>0.97222222 0.916666666666667</systemStatuSystemPos>
+            <systemStatuGamelistOrigin>1 0.5</systemStatuGamelistOrigin>
+            <systemStatuGamelistPos>0.97222222 0.08</systemStatuGamelistPos>
+         </variables>
+      </fontSize>
+   </aspectRatio>
+   <variant name="system-view-controllers, system-view-controllers-flat-background">
+      <aspectRatio name="1:1">
+         <view name="system">
+            <carousel name="carousel">
+               <pos>0 0.46</pos>
+               <itemSize>0.65 0.65</itemSize>
+            </carousel>
+         </view>
+      </aspectRatio>
+   </variant>
+   <variant name="system-view-colorful, system-view-colorful-flat-background">
+      <aspectRatio name="1:1">
+         <view name="system">
+            <carousel name="carousel">
+               <pos>0 0.45</pos>
+               <itemSize>1 1</itemSize>
+            </carousel>
+         </view>
+      </aspectRatio>
+   </variant>
+   <variant name="system-view-custom">
+      <aspectRatio name="1:1">
+         <view name="system">
+            <carousel name="carousel">
+               <pos>0 0.45</pos>
+               <itemSize>1 1</itemSize>
+               <imageFit>cover</imageFit>
+            </carousel>
+         </view>
+      </aspectRatio>
+   </variant>
+
+   <!--
+   ///
    Color Schemes
    ///
    -->
