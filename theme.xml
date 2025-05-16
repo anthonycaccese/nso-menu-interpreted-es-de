@@ -673,30 +673,30 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </view>
       <fontSize name="medium">
          <variables>
-            <avatarSize>0.111111111111111 0.111111111111111</avatarSize><!-- 80 80 -->
-            <menuBarSystemTitlePos>0.111111111111111 0.938888888888889</menuBarSystemTitlePos><!-- 80 676 -->
-            <menuBarSystemSubTitlePos>0.111111111111111 0.966666666666667</menuBarSystemSubTitlePos><!-- 80 696 -->
-            <menuBarGamelistTitlePos>0.111111111111111 0.027777777777778</menuBarGamelistTitlePos><!-- 80 20-->
-            <menuBarGamelistCollectionTitlePos>0.25 0.027777777777778</menuBarGamelistCollectionTitlePos><!-- 180 20-->
-            <menuBarGamelistSubTitlePos>0.111111111111111 0.055555555555556</menuBarGamelistSubTitlePos><!-- 80 40 -->
+            <avatarSize>0.09722222 0.111111111111111</avatarSize><!-- 80 80 -->
+            <menuBarSystemTitlePos>0.09722222 0.938888888888889</menuBarSystemTitlePos><!-- 80 676 -->
+            <menuBarSystemSubTitlePos>0.09722222 0.966666666666667</menuBarSystemSubTitlePos><!-- 80 696 -->
+            <menuBarGamelistTitlePos>0.09722222 0.027777777777778</menuBarGamelistTitlePos><!-- 80 20-->
+            <menuBarGamelistCollectionTitlePos>0.21875 0.027777777777778</menuBarGamelistCollectionTitlePos><!-- 180 20-->
+            <menuBarGamelistSubTitlePos>0.09722222 0.055555555555556</menuBarGamelistSubTitlePos><!-- 80 40 -->
             <systemStatuSystemOrigin>1 0.5</systemStatuSystemOrigin>
-            <systemStatuSystemPos>0.97222222 0.944444444444444</systemStatuSystemPos>
+            <systemStatuSystemPos>0.97465278 0.944444444444444</systemStatuSystemPos>
             <systemStatuGamelistOrigin>1 0.5</systemStatuGamelistOrigin>
-            <systemStatuGamelistPos>0.97222222 0.055555555555556</systemStatuGamelistPos>
+            <systemStatuGamelistPos>0.97465278 0.055555555555556</systemStatuGamelistPos>
          </variables>
       </fontSize>
       <fontSize name="large">
          <variables>
-            <avatarSize>0.16666667 0.166666666666667</avatarSize><!-- 120 120 -->
-            <menuBarSystemTitlePos>0.16666667 0.911111111111111</menuBarSystemTitlePos><!-- 120 656 -->
-            <menuBarSystemSubTitlePos>0.16666667 0.958333333333333</menuBarSystemSubTitlePos><!-- 120 690 -->
-            <menuBarGamelistTitlePos>0.16666667 0.036111111111111</menuBarGamelistTitlePos><!-- 120 26 -->
-            <menuBarGamelistCollectionTitlePos>0.38888889 0.036111111111111</menuBarGamelistCollectionTitlePos><!-- 280 26 -->
-            <menuBarGamelistSubTitlePos>0.16666667 0.083333333333333</menuBarGamelistSubTitlePos><!-- 120 60 -->
+            <avatarSize>0.14583333 0.166666666666667</avatarSize><!-- 120 120 -->
+            <menuBarSystemTitlePos>0.14583333 0.911111111111111</menuBarSystemTitlePos><!-- 120 656 -->
+            <menuBarSystemSubTitlePos>0.14583333 0.958333333333333</menuBarSystemSubTitlePos><!-- 120 690 -->
+            <menuBarGamelistTitlePos>0.14583333 0.036111111111111</menuBarGamelistTitlePos><!-- 120 26 -->
+            <menuBarGamelistCollectionTitlePos>0.34027778 0.036111111111111</menuBarGamelistCollectionTitlePos><!-- 280 26 -->
+            <menuBarGamelistSubTitlePos>0.14583333 0.083333333333333</menuBarGamelistSubTitlePos><!-- 120 60 -->
             <systemStatuSystemOrigin>1 0.5</systemStatuSystemOrigin>
-            <systemStatuSystemPos>0.97222222 0.916666666666667</systemStatuSystemPos>
+            <systemStatuSystemPos>0.97465278 0.916666666666667</systemStatuSystemPos>
             <systemStatuGamelistOrigin>1 0.5</systemStatuGamelistOrigin>
-            <systemStatuGamelistPos>0.97222222 0.08</systemStatuGamelistPos>
+            <systemStatuGamelistPos>0.97465278 0.08</systemStatuGamelistPos>
          </variables>
       </fontSize>
    </aspectRatio>
