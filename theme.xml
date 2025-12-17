@@ -16,6 +16,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    <include>./_inc/systems/metadata-global/${system.theme}.xml</include>
    <include>./_inc/systems/metadata-custom/_default.xml</include>
    <include>./_inc/systems/metadata-custom/${system.theme}.xml</include>
+   <include>./colors.xml</include>
 
    <!--
    ///
@@ -79,31 +80,38 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       <image name="menu-bar">
          <path>${spacerImage}</path>
          <tile>true</tile>
-         <color>000000</color>
-         <zIndex>2</zIndex>
+         <color>${menuBarColor}</color>
+         <zIndex>40</zIndex>
          <size>${menuBarSize}</size>
       </image>
       <image name="menu-bar-shadow">
          <size>1 0.002777777777778</size><!-- 100% 2 -->
          <path>${spacerImage}</path>
          <tile>true</tile>
-         <color>000000aa</color>
-         <zIndex>2</zIndex>
+         <color>${menuBarShadowColor}</color>
+         <zIndex>50</zIndex>
       </image>
       <image name="avatar-image">
          <path>${avatarImage}</path>
-         <zIndex>3</zIndex>
+         <zIndex>60</zIndex>
          <stationary>withinView</stationary>
       </image>
       <image name="avatar-mask">
          <path>./_inc/images/avatar-mask.svg</path>
-         <zIndex>4</zIndex>
+         <color>${menuBarColor}</color>
+         <zIndex>70</zIndex>
          <stationary>withinView</stationary>
       </image>
-      <text name="menu-title-system, custom-collection-name, game-count">
+      <image name="avatar-border">
+         <path>./_inc/images/avatar-border.svg</path>
+         <zIndex>80</zIndex>
+         <stationary>withinView</stationary>
+      </image>
+      <text name="menu-title-system,custom-collection-name,game-count">
          <fontSize>${menuBarFontSize}</fontSize>
          <fontPath>${fontRegular}</fontPath>
          <lineSpacing>1</lineSpacing>
+         <zIndex>90</zIndex>
          <stationary>withinView</stationary>
       </text>
       <clock name="clock">
@@ -115,6 +123,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <fontPath>${fontRegular}</fontPath>
          <height>${systemStatusHeight}</height>
          <textRelativeScale>0.5</textRelativeScale>
+         <color>${menuBarPrimaryTextColor}</color>
          <customIcon icon="icon_bluetooth">./_inc/images/icon-bluetooth.svg</customIcon>
          <customIcon icon="icon_wifi">./_inc/images/icon-wifi.svg</customIcon>
          <customIcon icon="icon_cellular">./_inc/images/icon-cellular.svg</customIcon>
@@ -147,37 +156,54 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    -->
    <view name="system">
       <image name="background">
-         <color>${systemColor}</color>
+         <color>000000</color>
+      </image>
+      <image name="static-image">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <cropSize>1 1</cropSize>
+         <path>${staticImagePath}</path>
+         <color>${staticImageColor}</color>
+         <tile>${staticImageTile}</tile>
+         <zIndex>1</zIndex>
       </image>
       <gameselector name="selector-random">
          <selection>random</selection>
       </gameselector>
-      <image name="background-art">
+      <image name="game-image">
          <origin>0.5 0.5</origin>
          <pos>0.5 0.5</pos>
          <cropSize>1 1</cropSize>
          <zIndex>1</zIndex>
          <gameselector>selector-random</gameselector>
-         <imageType>screenshot</imageType>
-         <saturation>0</saturation>
-         <color>ffffff33</color>
+         <imageType>${gameImageType}</imageType>
+         <color>${gameImageColor}</color>
+         <saturation>${gameImageSaturation}</saturation>
+         <zIndex>2</zIndex>
       </image>
       <carousel name="carousel">
          <origin>0 0.5</origin>
+         <pos>0 0.45</pos>
          <size>1 1</size>
          <color>00000000</color>
          <itemScale>1</itemScale>
+         <itemSize>${carouselImageSize}</itemSize>
          <itemTransitions>animate</itemTransitions>
          <maxItemCount>1</maxItemCount>
+         <imageColor>${carouselImageColor}</imageColor>
+         <staticImage>${carouselImagePath}</staticImage>
          <textColor>ffffff</textColor>
          <fontPath>${fontBold}</fontPath>
          <letterCaseAutoCollections>capitalize</letterCaseAutoCollections>
          <fastScrolling>true</fastScrolling>
-         <zIndex>1</zIndex>
+         <zIndex>3</zIndex>
       </carousel>
-      <image name="avatar-image, avatar-mask">
+      <image name="avatar-mask,avatar-border">
          <origin>0 1</origin>
          <pos>0 1</pos>
+      </image>
+      <image name="avatar-image">
+         <origin>0 1</origin>
       </image>
       <image name="menu-bar">
          <origin>0 1</origin>
@@ -190,12 +216,12 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       <text name="menu-title-system">
          <origin>0 1</origin>
          <fontPath>${fontBold}</fontPath>
-         <color>ffffff</color>
+         <color>${menuBarPrimaryTextColor}</color>
          <text>${systemName}</text>
       </text>
       <text name="game-count">
          <origin>0 1</origin>
-         <color>777777</color>
+         <color>${menuBarSecondaryTextColor}</color>
          <systemdata>gamecount</systemdata>
          <letterCase>capitalize</letterCase>
       </text>
@@ -210,46 +236,6 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <menuBarSystemShadowPos>0 0.833333333333333</menuBarSystemShadowPos><!-- 0 600 -->
       </variables>
    </fontSize>
-
-   <!--
-   ///
-   System View: Variants
-   ///
-   -->
-   <variant name="system-view-controllers, system-view-controllers-flat-background">
-      <view name="system">
-         <carousel name="carousel">
-            <staticImage>./_inc/systems/controllers/${system.theme}.png</staticImage>
-         </carousel>
-      </view>
-   </variant>
-   <variant name="system-view-colorful, system-view-colorful-flat-background">
-      <view name="system">
-         <carousel name="carousel">
-            <staticImage>./_inc/systems/colorful/${system.theme}.webp</staticImage>
-         </carousel>
-      </view>
-   </variant>
-   <variant name="system-view-controllers-flat-background,system-view-colorful-flat-background">
-      <view name="system">
-         <image name="background-art">
-            <color>ffffff00</color>
-         </image>
-      </view>
-   </variant>
-   <variant name="system-view-custom">
-      <view name="system">
-         <carousel name="carousel">
-            <staticImage>./customizations/systems/${system.theme}.png</staticImage>
-         </carousel>
-         <image name="background-art">
-            <color>ffffff00</color>
-         </image>
-         <image name="background">
-            <color>000000</color>
-         </image>
-      </view>
-   </variant>
 
    <!--
    ///
@@ -269,12 +255,12 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <origin>0 0</origin>
          <pos>${menuBarGamelistShadowPos}</pos>
       </image>
-      <image name="avatar-image, avatar-mask">
+      <image name="avatar-image,avatar-mask,avatar-border">
          <origin>0 0</origin>
          <pos>0 0</pos>
       </image>
-      <text name="menu-title-system, custom-collection-name">
-         <color>777777</color>
+      <text name="menu-title-system,custom-collection-name">
+         <color>${menuBarSecondaryTextColor}</color>
       </text>
       <text name="menu-title-system">
          <text>${systemName}</text>
@@ -286,7 +272,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <origin>0 0</origin>
          <fontSize>${menuBarFontSize}</fontSize>
          <fontPath>${fontBold}</fontPath>
-         <color>ffffff</color>
+         <color>${menuBarPrimaryTextColor}</color>
          <metadata>name</metadata>
          <lineSpacing>1</lineSpacing>
          <stationary>withinView</stationary>
@@ -311,7 +297,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <fontPath>${fontBold}</fontPath>
          <fontSize>${gamelistGridFontSize}</fontSize>
          <selectorImage>./_inc/systems/coversize/${systemCoverSize}.svg</selectorImage>
-         <selectorColor>ffffff</selectorColor>
+         <selectorColor>${selectorColor}</selectorColor>
          <imageRelativeScale>1</imageRelativeScale>
       </grid>
    </view>
@@ -339,8 +325,21 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    -->
    <aspectRatio name="16:9">
       <view name="system,gamelist">
-         <image name="avatar-image, avatar-mask">
-            <size>${avatarSize}</size>
+         <image name="avatar-mask,avatar-border">
+            <size>${avatarMaskSize}</size>
+         </image>
+         <image name="avatar-image">
+            <cropSize>${avatarSize}</cropSize>
+         </image>
+      </view>
+      <view name="system">
+         <image name="avatar-image">
+            <pos>${avatarSystemPos}</pos>
+         </image>
+      </view>
+      <view name="gamelist">
+         <image name="avatar-image">
+            <pos>${avatarGamelistPos}</pos>
          </image>
       </view>
       <view name="system">
@@ -373,7 +372,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </view>
       <fontSize name="medium">
          <variables>
-            <avatarSize>0.0625 0.111111111111111</avatarSize><!-- 80 80 -->
+            <avatarMaskSize>0.0625 0.111111111111111</avatarMaskSize><!-- 80 80 -->
+            <avatarSize>0.03125 0.05555556</avatarSize><!-- 40 40 -->
+            <avatarSystemPos>0.015625 0.97222222</avatarSystemPos><!-- 20 700 -->
+            <avatarGamelistPos>0.015625 0.02777778</avatarGamelistPos><!-- 20 20 -->
             <menuBarSystemTitlePos>0.0625 0.938888888888889</menuBarSystemTitlePos><!-- 80 676 -->
             <menuBarSystemSubTitlePos>0.0625 0.966666666666667</menuBarSystemSubTitlePos><!-- 80 696 -->
             <menuBarGamelistTitlePos>0.0625 0.027777777777778</menuBarGamelistTitlePos><!-- 80 20-->
@@ -387,7 +389,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </fontSize>
       <fontSize name="large">
          <variables>
-            <avatarSize>0.09375 0.166666666666667</avatarSize><!-- 120 120 -->
+            <avatarMaskSize>0.09375 0.166666666666667</avatarMaskSize><!-- 120 120 -->
+            <avatarSize>0.046875 0.08333333</avatarSize><!-- 60 60 -->
+            <avatarSystemPos>0.0234375 0.95833333</avatarSystemPos><!-- 30 690 -->
+            <avatarGamelistPos>0.0234375 0.04166667</avatarGamelistPos><!-- 30 30 -->
             <menuBarSystemTitlePos>0.09375 0.911111111111111</menuBarSystemTitlePos><!-- 120 656 -->
             <menuBarSystemSubTitlePos>0.09375 0.958333333333333</menuBarSystemSubTitlePos><!-- 120 690 -->
             <menuBarGamelistTitlePos>0.09375 0.036111111111111</menuBarGamelistTitlePos><!-- 120 26 -->
@@ -400,37 +405,6 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          </variables>
       </fontSize>
    </aspectRatio>
-   <variant name="system-view-controllers, system-view-controllers-flat-background">
-      <aspectRatio name="16:9">
-         <view name="system">
-            <carousel name="carousel">
-               <pos>0 0.46</pos>
-               <itemSize>0.5 0.6</itemSize>
-            </carousel>
-         </view>
-      </aspectRatio>
-   </variant>
-   <variant name="system-view-colorful, system-view-colorful-flat-background">
-      <aspectRatio name="16:9">
-         <view name="system">
-            <carousel name="carousel">
-               <pos>0 0.45</pos>
-               <itemSize>1 1</itemSize>
-            </carousel>
-         </view>
-      </aspectRatio>
-   </variant>
-   <variant name="system-view-custom">
-      <aspectRatio name="16:9">
-         <view name="system">
-            <carousel name="carousel">
-               <pos>0 0.45</pos>
-               <itemSize>1 1</itemSize>
-               <imageFit>cover</imageFit>
-            </carousel>
-         </view>
-      </aspectRatio>
-   </variant>
 
    <!--
    ///
@@ -439,8 +413,21 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    -->
    <aspectRatio name="16:10">
       <view name="system,gamelist">
-         <image name="avatar-image,avatar-mask">
-            <size>${avatarSize}</size>
+         <image name="avatar-mask,avatar-border">
+            <size>${avatarMaskSize}</size>
+         </image>
+         <image name="avatar-image">
+            <cropSize>${avatarSize}</cropSize>
+         </image>
+      </view>
+      <view name="system">
+         <image name="avatar-image">
+            <pos>${avatarSystemPos}</pos>
+         </image>
+      </view>
+      <view name="gamelist">
+         <image name="avatar-image">
+            <pos>${avatarGamelistPos}</pos>
          </image>
       </view>
       <view name="system">
@@ -473,7 +460,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </view>
       <fontSize name="medium">
          <variables>
-            <avatarSize>0.069444444444444 0.111111111111111</avatarSize><!-- 80 80 -->
+            <avatarMaskSize>0.069444444444444 0.111111111111111</avatarMaskSize><!-- 80 80 -->
+            <avatarSize>0.03472222 0.05555556</avatarSize><!-- 40 40 -->
+            <avatarSystemPos>0.01736111 0.97222222</avatarSystemPos><!-- 20 700 -->
+            <avatarGamelistPos>0.01736111 0.02777778</avatarGamelistPos><!-- 20 20 -->
             <menuBarSystemTitlePos>0.069444444444444 0.938888888888889</menuBarSystemTitlePos><!-- 80 676 -->
             <menuBarSystemSubTitlePos>0.069444444444444 0.966666666666667</menuBarSystemSubTitlePos><!-- 80 696 -->
             <menuBarGamelistTitlePos>0.069444444444444 0.027777777777778</menuBarGamelistTitlePos><!-- 80 20-->
@@ -487,7 +477,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </fontSize>
       <fontSize name="large">
          <variables>
-            <avatarSize>0.104166666666667 0.166666666666667</avatarSize><!-- 120 120 -->
+            <avatarMaskSize>0.104166666666667 0.166666666666667</avatarMaskSize><!-- 120 120 -->
+            <avatarSize>0.05208333 0.08333333</avatarSize><!-- 60 60 -->
+            <avatarSystemPos>0.02604167 0.95833333</avatarSystemPos><!-- 30 690 -->
+            <avatarGamelistPos>0.02604167 0.04166667</avatarGamelistPos><!-- 30 30 -->
             <menuBarSystemTitlePos>0.104166666666667 0.911111111111111</menuBarSystemTitlePos><!-- 120 656 -->
             <menuBarSystemSubTitlePos>0.104166666666667 0.958333333333333</menuBarSystemSubTitlePos><!-- 120 690 -->
             <menuBarGamelistTitlePos>0.104166666666667 0.036111111111111</menuBarGamelistTitlePos><!-- 120 26 -->
@@ -500,37 +493,6 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          </variables>
       </fontSize>
    </aspectRatio>
-   <variant name="system-view-controllers, system-view-controllers-flat-background">
-      <aspectRatio name="16:10">
-         <view name="system">
-            <carousel name="carousel">
-               <pos>0 0.46</pos>
-               <itemSize>0.55 0.55</itemSize>
-            </carousel>
-         </view>
-      </aspectRatio>
-   </variant>
-   <variant name="system-view-colorful, system-view-colorful-flat-background">
-      <aspectRatio name="16:10">
-         <view name="system">
-            <carousel name="carousel">
-               <pos>0 0.45</pos>
-               <itemSize>1 1</itemSize>
-            </carousel>
-         </view>
-      </aspectRatio>
-   </variant>
-   <variant name="system-view-custom">
-      <aspectRatio name="16:10">
-         <view name="system">
-            <carousel name="carousel">
-               <pos>0 0.45</pos>
-               <itemSize>1 1</itemSize>
-               <imageFit>cover</imageFit>
-            </carousel>
-         </view>
-      </aspectRatio>
-   </variant>
 
    <!--
    ///
@@ -539,8 +501,21 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    -->
    <aspectRatio name="4:3">
       <view name="system,gamelist">
-         <image name="avatar-image,avatar-mask">
-            <size>${avatarSize}</size>
+         <image name="avatar-mask,avatar-border">
+            <size>${avatarMaskSize}</size>
+         </image>
+         <image name="avatar-image">
+            <cropSize>${avatarSize}</cropSize>
+         </image>
+      </view>
+      <view name="system">
+         <image name="avatar-image">
+            <pos>${avatarSystemPos}</pos>
+         </image>
+      </view>
+      <view name="gamelist">
+         <image name="avatar-image">
+            <pos>${avatarGamelistPos}</pos>
          </image>
       </view>
       <view name="system">
@@ -573,7 +548,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </view>
       <fontSize name="medium">
          <variables>
-            <avatarSize>0.083333333333333 0.111111111111111</avatarSize><!-- 80 80 -->
+            <avatarMaskSize>0.083333333333333 0.111111111111111</avatarMaskSize><!-- 80 80 -->
+            <avatarSize>0.04166667 0.05555556</avatarSize><!-- 40 40 -->
+            <avatarSystemPos>0.02083333 0.97222222</avatarSystemPos><!-- 20 700 -->
+            <avatarGamelistPos>0.02083333 0.02777778</avatarGamelistPos><!-- 20 20 -->
             <menuBarSystemTitlePos>0.083333333333333 0.938888888888889</menuBarSystemTitlePos><!-- 80 676 -->
             <menuBarSystemSubTitlePos>0.083333333333333 0.966666666666667</menuBarSystemSubTitlePos><!-- 80 696 -->
             <menuBarGamelistTitlePos>0.083333333333333 0.027777777777778</menuBarGamelistTitlePos><!-- 80 20-->
@@ -587,7 +565,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </fontSize>
       <fontSize name="large">
          <variables>
-            <avatarSize>0.125 0.166666666666667</avatarSize><!-- 120 120 -->
+            <avatarMaskSize>0.125 0.166666666666667</avatarMaskSize><!-- 120 120 -->
+            <avatarSize>0.0625 0.08333333</avatarSize><!-- 60 60 -->
+            <avatarSystemPos>0.03125 0.95833333</avatarSystemPos><!-- 30 690 -->
+            <avatarGamelistPos>0.03125 0.04166667</avatarGamelistPos><!-- 30 30 -->
             <menuBarSystemTitlePos>0.125 0.911111111111111</menuBarSystemTitlePos><!-- 120 656 -->
             <menuBarSystemSubTitlePos>0.125 0.958333333333333</menuBarSystemSubTitlePos><!-- 120 690 -->
             <menuBarGamelistTitlePos>0.125 0.036111111111111</menuBarGamelistTitlePos><!-- 120 26 -->
@@ -600,37 +581,6 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          </variables>
       </fontSize>
    </aspectRatio>
-   <variant name="system-view-controllers, system-view-controllers-flat-background">
-      <aspectRatio name="4:3">
-         <view name="system">
-            <carousel name="carousel">
-               <pos>0 0.46</pos>
-               <itemSize>0.55 0.55</itemSize>
-            </carousel>
-         </view>
-      </aspectRatio>
-   </variant>
-   <variant name="system-view-colorful, system-view-colorful-flat-background">
-      <aspectRatio name="4:3">
-         <view name="system">
-            <carousel name="carousel">
-               <pos>0 0.45</pos>
-               <itemSize>1 1</itemSize>
-            </carousel>
-         </view>
-      </aspectRatio>
-   </variant>
-   <variant name="system-view-custom">
-      <aspectRatio name="4:3">
-         <view name="system">
-            <carousel name="carousel">
-               <pos>0 0.45</pos>
-               <itemSize>1 1</itemSize>
-               <imageFit>cover</imageFit>
-            </carousel>
-         </view>
-      </aspectRatio>
-   </variant>
 
    <!--
    ///
@@ -639,8 +589,21 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    -->
    <aspectRatio name="8:7">
       <view name="system,gamelist">
-         <image name="avatar-image,avatar-mask">
-            <size>${avatarSize}</size>
+         <image name="avatar-mask,avatar-border">
+            <size>${avatarMaskSize}</size>
+         </image>
+         <image name="avatar-image">
+            <cropSize>${avatarSize}</cropSize>
+         </image>
+      </view>
+      <view name="system">
+         <image name="avatar-image">
+            <pos>${avatarSystemPos}</pos>
+         </image>
+      </view>
+      <view name="gamelist">
+         <image name="avatar-image">
+            <pos>${avatarGamelistPos}</pos>
          </image>
       </view>
       <view name="system">
@@ -673,7 +636,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </view>
       <fontSize name="medium">
          <variables>
-            <avatarSize>0.09722222 0.111111111111111</avatarSize><!-- 80 80 -->
+            <avatarMaskSize>0.09722222 0.111111111111111</avatarMaskSize><!-- 80 80 -->
+            <avatarSize>0.04860267 0.05555556</avatarSize><!-- 40 40 -->
+            <avatarSystemPos>0.02430134 0.97222222</avatarSystemPos><!-- 20 700 -->
+            <avatarGamelistPos>0.02430134 0.02777778</avatarGamelistPos><!-- 20 20 -->
             <menuBarSystemTitlePos>0.09722222 0.938888888888889</menuBarSystemTitlePos><!-- 80 676 -->
             <menuBarSystemSubTitlePos>0.09722222 0.966666666666667</menuBarSystemSubTitlePos><!-- 80 696 -->
             <menuBarGamelistTitlePos>0.09722222 0.027777777777778</menuBarGamelistTitlePos><!-- 80 20-->
@@ -687,7 +653,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </fontSize>
       <fontSize name="large">
          <variables>
-            <avatarSize>0.14583333 0.166666666666667</avatarSize><!-- 120 120 -->
+            <avatarMaskSize>0.14583333 0.166666666666667</avatarMaskSize><!-- 120 120 -->
+            <avatarSize>0.07290401 0.08333333</avatarSize><!-- 60 60 -->
+            <avatarSystemPos>0.036452 0.95833333</avatarSystemPos><!-- 30 690 -->
+            <avatarGamelistPos>0.036452 0.04166667</avatarGamelistPos><!-- 30 30 -->
             <menuBarSystemTitlePos>0.14583333 0.911111111111111</menuBarSystemTitlePos><!-- 120 656 -->
             <menuBarSystemSubTitlePos>0.14583333 0.958333333333333</menuBarSystemSubTitlePos><!-- 120 690 -->
             <menuBarGamelistTitlePos>0.14583333 0.036111111111111</menuBarGamelistTitlePos><!-- 120 26 -->
@@ -700,37 +669,6 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          </variables>
       </fontSize>
    </aspectRatio>
-   <variant name="system-view-controllers, system-view-controllers-flat-background">
-      <aspectRatio name="8:7">
-         <view name="system">
-            <carousel name="carousel">
-               <pos>0 0.46</pos>
-               <itemSize>0.65 0.65</itemSize>
-            </carousel>
-         </view>
-      </aspectRatio>
-   </variant>
-   <variant name="system-view-colorful, system-view-colorful-flat-background">
-      <aspectRatio name="8:7">
-         <view name="system">
-            <carousel name="carousel">
-               <pos>0 0.45</pos>
-               <itemSize>1 1</itemSize>
-            </carousel>
-         </view>
-      </aspectRatio>
-   </variant>
-   <variant name="system-view-custom">
-      <aspectRatio name="8:7">
-         <view name="system">
-            <carousel name="carousel">
-               <pos>0 0.45</pos>
-               <itemSize>1 1</itemSize>
-               <imageFit>cover</imageFit>
-            </carousel>
-         </view>
-      </aspectRatio>
-   </variant>
 
    <!--
    ///
@@ -739,8 +677,21 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    -->
    <aspectRatio name="1:1">
       <view name="system,gamelist">
-         <image name="avatar-image,avatar-mask">
-            <size>${avatarSize}</size>
+         <image name="avatar-mask,avatar-border">
+            <size>${avatarMaskSize}</size>
+         </image>
+         <image name="avatar-image">
+            <cropSize>${avatarSize}</cropSize>
+         </image>
+      </view>
+      <view name="system">
+         <image name="avatar-image">
+            <pos>${avatarSystemPos}</pos>
+         </image>
+      </view>
+      <view name="gamelist">
+         <image name="avatar-image">
+            <pos>${avatarGamelistPos}</pos>
          </image>
       </view>
       <view name="system">
@@ -773,7 +724,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </view>
       <fontSize name="medium">
          <variables>
-            <avatarSize>0.111111111111111 0.111111111111111</avatarSize><!-- 80 80 -->
+            <avatarMaskSize>0.111111111111111 0.111111111111111</avatarMaskSize><!-- 80 80 -->
+            <avatarSize>0.05555556 0.05555556</avatarSize><!-- 40 40 -->
+            <avatarSystemPos>0.02777778 0.97222222</avatarSystemPos><!-- 20 700 -->
+            <avatarGamelistPos>0.02777778 0.02777778</avatarGamelistPos><!-- 20 20 -->
             <menuBarSystemTitlePos>0.111111111111111 0.938888888888889</menuBarSystemTitlePos><!-- 80 676 -->
             <menuBarSystemSubTitlePos>0.111111111111111 0.966666666666667</menuBarSystemSubTitlePos><!-- 80 696 -->
             <menuBarGamelistTitlePos>0.111111111111111 0.027777777777778</menuBarGamelistTitlePos><!-- 80 20-->
@@ -787,7 +741,10 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </fontSize>
       <fontSize name="large">
          <variables>
-            <avatarSize>0.16666667 0.166666666666667</avatarSize><!-- 120 120 -->
+            <avatarMaskSize>0.16666667 0.166666666666667</avatarMaskSize><!-- 120 120 -->
+            <avatarSize>0.08333333 0.08333333</avatarSize><!-- 60 60 -->
+            <avatarSystemPos>0.04166667 0.95833333</avatarSystemPos><!-- 30 690 -->
+            <avatarGamelistPos>0.04166667 0.04166667</avatarGamelistPos><!-- 30 30 -->
             <menuBarSystemTitlePos>0.16666667 0.911111111111111</menuBarSystemTitlePos><!-- 120 656 -->
             <menuBarSystemSubTitlePos>0.16666667 0.958333333333333</menuBarSystemSubTitlePos><!-- 120 690 -->
             <menuBarGamelistTitlePos>0.16666667 0.036111111111111</menuBarGamelistTitlePos><!-- 120 26 -->
@@ -800,53 +757,6 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          </variables>
       </fontSize>
    </aspectRatio>
-   <variant name="system-view-controllers, system-view-controllers-flat-background">
-      <aspectRatio name="1:1">
-         <view name="system">
-            <carousel name="carousel">
-               <pos>0 0.46</pos>
-               <itemSize>0.65 0.65</itemSize>
-            </carousel>
-         </view>
-      </aspectRatio>
-   </variant>
-   <variant name="system-view-colorful, system-view-colorful-flat-background">
-      <aspectRatio name="1:1">
-         <view name="system">
-            <carousel name="carousel">
-               <pos>0 0.45</pos>
-               <itemSize>1 1</itemSize>
-            </carousel>
-         </view>
-      </aspectRatio>
-   </variant>
-   <variant name="system-view-custom">
-      <aspectRatio name="1:1">
-         <view name="system">
-            <carousel name="carousel">
-               <pos>0 0.45</pos>
-               <itemSize>1 1</itemSize>
-               <imageFit>cover</imageFit>
-            </carousel>
-         </view>
-      </aspectRatio>
-   </variant>
-
-   <!--
-   ///
-   Color Schemes
-   ///
-   -->
-   <colorScheme name="avatar-es-de">
-      <variables>
-         <avatarImage>./_inc/images/avatars/es-de.png</avatarImage>
-      </variables>
-   </colorScheme>
-   <colorScheme name="avatar-custom">
-      <variables>
-         <avatarImage>./theme-customizations/avatar.png</avatarImage>
-      </variables>
-   </colorScheme>
 
    <!--
    ///

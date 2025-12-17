@@ -1,0 +1,212 @@
+<theme>
+   <colorScheme name="controllers,custom">
+      <variables>
+         <!--
+         ///
+         All Views
+         ///
+         -->
+         <avatarImage>./_inc/images/avatar-default.png</avatarImage>
+         <menuBarColor>000000</menuBarColor>
+         <menuBarShadowColor>000000aa</menuBarShadowColor>
+         <menuBarPrimaryTextColor>ffffff</menuBarPrimaryTextColor>
+         <menuBarSecondaryTextColor>777777</menuBarSecondaryTextColor>
+         <!--
+         ///
+         System View
+         ///
+         -->
+         <carouselImagePath>./_inc/systems/controllers/${system.theme}.png</carouselImagePath>
+         <carouselImageColor>ffffff</carouselImageColor>
+         <carouselImageSize>0.55 0.65</carouselImageSize>
+         <gameImageType>screenshot</gameImageType>
+         <gameImageColor>ffffff00</gameImageColor>
+         <gameImageSaturation>0</gameImageSaturation>
+         <staticImagePath>${spacerImage}</staticImagePath>
+         <staticImageColor>${systemColor}</staticImageColor>
+         <staticImageTile>true</staticImageTile>
+         <!--
+         ///
+         Gamelist View
+         ///
+         -->
+         <selectorColor>ffffff</selectorColor>
+      </variables>
+   </colorScheme>
+   <colorScheme name="controllers-screenshots">
+      <variables>
+         <!--
+         ///
+         All Views
+         ///
+         -->
+         <avatarImage>./_inc/images/avatar-default.png</avatarImage>
+         <menuBarColor>000000</menuBarColor>
+         <menuBarShadowColor>000000aa</menuBarShadowColor>
+         <menuBarPrimaryTextColor>ffffff</menuBarPrimaryTextColor>
+         <menuBarSecondaryTextColor>777777</menuBarSecondaryTextColor>
+         <!--
+         ///
+         System View
+         ///
+         -->
+         <carouselImagePath>./_inc/systems/controllers/${system.theme}.png</carouselImagePath>
+         <carouselImageColor>ffffff</carouselImageColor>
+         <carouselImageSize>0.55 0.65</carouselImageSize>
+         <gameImageType>screenshot</gameImageType>
+         <gameImageColor>ffffff33</gameImageColor>
+         <gameImageSaturation>0</gameImageSaturation>
+         <staticImagePath>${spacerImage}</staticImagePath>
+         <staticImageColor>${systemColor}</staticImageColor>
+         <staticImageTile>true</staticImageTile>
+         <!--
+         ///
+         Gamelist View
+         ///
+         -->
+         <selectorColor>ffffff</selectorColor>
+      </variables>
+   </colorScheme>
+   <colorScheme name="colorful">
+      <variables>
+         <!--
+         ///
+         All Views
+         ///
+         -->
+         <avatarImage>./_inc/images/avatar-default.png</avatarImage>
+         <menuBarColor>000000</menuBarColor>
+         <menuBarShadowColor>000000aa</menuBarShadowColor>
+         <menuBarPrimaryTextColor>ffffff</menuBarPrimaryTextColor>
+         <menuBarSecondaryTextColor>777777</menuBarSecondaryTextColor>
+         <!--
+         ///
+         System View
+         ///
+         -->
+         <carouselImagePath>./_inc/systems/colorful/${system.theme}.webp</carouselImagePath>
+         <carouselImageColor>ffffff</carouselImageColor>
+         <carouselImageSize>1 1</carouselImageSize>
+         <gameImageType>screenshot</gameImageType>
+         <gameImageColor>ffffff00</gameImageColor>
+         <gameImageSaturation>0</gameImageSaturation>
+         <staticImagePath>${spacerImage}</staticImagePath>
+         <staticImageColor>${systemColor}</staticImageColor>
+         <staticImageTile>true</staticImageTile>
+         <!--
+         ///
+         Gamelist View
+         ///
+         -->
+         <selectorColor>ffffff</selectorColor>
+      </variables>
+   </colorScheme>
+   <colorScheme name="colorful-screenshots">
+      <variables>
+         <!--
+         ///
+         All Views
+         ///
+         -->
+         <avatarImage>./_inc/images/avatar-default.png</avatarImage>
+         <menuBarColor>000000</menuBarColor>
+         <menuBarShadowColor>000000aa</menuBarShadowColor>
+         <menuBarPrimaryTextColor>ffffff</menuBarPrimaryTextColor>
+         <menuBarSecondaryTextColor>777777</menuBarSecondaryTextColor>
+         <!--
+         ///
+         System View
+         ///
+         -->
+         <carouselImagePath>./_inc/systems/colorful/${system.theme}.webp</carouselImagePath>
+         <carouselImageColor>ffffff</carouselImageColor>
+         <carouselImageSize>1 1</carouselImageSize>
+         <gameImageType>screenshot</gameImageType>
+         <gameImageColor>ffffff33</gameImageColor>
+         <gameImageSaturation>0</gameImageSaturation>
+         <staticImagePath>${spacerImage}</staticImagePath>
+         <staticImageColor>${systemColor}</staticImageColor>
+         <staticImageTile>true</staticImageTile>
+         <!--
+         ///
+         Gamelist View
+         ///
+         -->
+         <selectorColor>ffffff</selectorColor>
+      </variables>
+   </colorScheme>
+   <colorScheme name="screenshots">
+      <variables>
+         <!--
+         ///
+         All Views
+         ///
+         -->
+         <avatarImage>./_inc/images/avatar-default.png</avatarImage>
+         <menuBarColor>000000</menuBarColor>
+         <menuBarShadowColor>000000aa</menuBarShadowColor>
+         <menuBarPrimaryTextColor>ffffff</menuBarPrimaryTextColor>
+         <menuBarSecondaryTextColor>777777</menuBarSecondaryTextColor>
+         <!--
+         ///
+         System View
+         ///
+         -->
+         <carouselImagePath>${spacerImage}</carouselImagePath>
+         <carouselImageColor>00000000</carouselImageColor>
+         <carouselImageSize>1 1</carouselImageSize>
+         <gameImageType>screenshot</gameImageType>
+         <gameImageColor>ffffffaa</gameImageColor>
+         <gameImageSaturation>1</gameImageSaturation>
+         <staticImagePath>${spacerImage}</staticImagePath>
+         <staticImageColor>000000</staticImageColor>
+         <staticImageTile>true</staticImageTile>
+         <!--
+         ///
+         Gamelist View
+         ///
+         -->
+         <selectorColor>ffffff</selectorColor>
+      </variables>
+   </colorScheme>
+   <colorScheme name="fanart">
+      <variables>
+         <!--
+         ///
+         All Views
+         ///
+         -->
+         <avatarImage>./_inc/images/avatar-default.png</avatarImage>
+         <menuBarColor>000000</menuBarColor>
+         <menuBarShadowColor>000000aa</menuBarShadowColor>
+         <menuBarPrimaryTextColor>ffffff</menuBarPrimaryTextColor>
+         <menuBarSecondaryTextColor>777777</menuBarSecondaryTextColor>
+         <!--
+         ///
+         System View
+         ///
+         -->
+         <carouselImagePath>${spacerImage}</carouselImagePath>
+         <carouselImageColor>00000000</carouselImageColor>
+         <carouselImageSize>1 1</carouselImageSize>
+         <gameImageType>fanart,screenshot</gameImageType>
+         <gameImageColor>ffffffdd</gameImageColor>
+         <gameImageSaturation>1</gameImageSaturation>
+         <staticImagePath>${spacerImage}</staticImagePath>
+         <staticImageColor>000000</staticImageColor>
+         <staticImageTile>true</staticImageTile>
+         <!--
+         ///
+         Gamelist View
+         ///
+         -->
+         <selectorColor>ffffff</selectorColor>
+      </variables>
+   </colorScheme>
+   <colorScheme name="custom">
+      <variables>
+         <customizationPath>./theme-customizations/customizations.xml</customizationPath>
+      </variables>
+   </colorScheme>
+   <include>${customizationPath}</include>
+</theme>

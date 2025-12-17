@@ -11,11 +11,26 @@
    <fontSize>medium</fontSize>
    <fontSize>large</fontSize>
 
-   <colorScheme name="avatar-es-de">
-      <label>ES-DE Avatar</label>
+   <colorScheme name="controllers">
+      <label>Default [Controllers]</label>
    </colorScheme>
-   <colorScheme name="avatar-custom">
-      <label>Custom Avatar</label>
+   <colorScheme name="controllers-screenshots">
+      <label>Default [Controllers + Screenshots]</label>
+   </colorScheme>
+   <colorScheme name="colorful">
+      <label>Default [Colorful]</label>
+   </colorScheme>
+   <colorScheme name="colorful-screenshots">
+      <label>Default [Colorful + Screenshots]</label>
+   </colorScheme>
+   <colorScheme name="screenshots">
+      <label>Default [Screenshots]</label>
+   </colorScheme>
+   <colorScheme name="fanart">
+      <label>Default [Fanart]</label>
+   </colorScheme>
+   <colorScheme name="custom">
+      <label>Custom</label>
    </colorScheme>
 
    <transitions name="transitions">
@@ -33,26 +48,5 @@
       <entry>builtin-slide</entry>
       <entry>builtin-fade</entry>
    </suppressTransitionProfiles>
-
-   <variant name="system-view-controllers-flat-background">
-      <label>Controller Images</label>
-      <selectable>true</selectable>
-   </variant>
-   <variant name="system-view-colorful-flat-background">
-      <label>Colorful Images</label>
-      <selectable>true</selectable>
-   </variant>
-   <variant name="system-view-controllers">
-      <label>Controller Images + Screenshot</label>
-      <selectable>true</selectable>
-   </variant>
-   <variant name="system-view-colorful">
-      <label>Colorful Images + Screenshot</label>
-      <selectable>true</selectable>
-   </variant>
-   <variant name="system-view-custom">
-      <label>Custom Images</label>
-      <selectable>true</selectable>
-   </variant>
 
 </themeCapabilities>
