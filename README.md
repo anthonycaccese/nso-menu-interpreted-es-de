@@ -28,15 +28,19 @@ A custom color scheme lets you modify some theme options while also allowing you
 
 2. Make a folder named theme-customizations and place a copy of the customizations.xml file inside that folder. The folder structure should look like this when you are done:
 
-`/ES-DE/themes/nso-menu-interpreted-es-de/theme-customizations/customizations.xml`
+   ```
+   /ES-DE/themes/nso-menu-interpreted-es-de/theme-customizations/customizations.xml
+   ```
 
-For the Android theme downloader version this would be:
+   For the Android theme downloader version this would be:
 
-`/Android/data/org.es_de.frontend/files/themes/nso-menu-interpreted-es-de/theme-customizations/customizations.xml`
+   ```
+   /Android/data/org.es_de.frontend/files/themes/nso-menu-interpreted-es-de/theme-customizations/customizations.xml
+   ```
 
-3. Edit the properties in customizations.xml to make theme customizations. There are comments within the template that explain each property. If you have questions just ask.
+4. Edit the properties in customizations.xml to make theme customizations. There are comments within the template that explain each property. If you have questions just ask.
 
-4. Set the Theme Color Scheme in ES-DE's UI Settings menu to `Custom` and you should see your customizations. If you see an error check that the paths discussed above are correct and then check that the values you added for each property are correct and well formatted.
+5. Set the Theme Color Scheme in ES-DE's UI Settings menu to `Custom` and you should see your customizations. If you see an error check that the paths discussed above are correct and then check that the values you added for each property are correct and well formatted.
 
 ## **Acknowledgments**
 
