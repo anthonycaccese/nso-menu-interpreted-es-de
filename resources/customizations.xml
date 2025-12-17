@@ -8,17 +8,19 @@
          ///
          -->
          <!-- 
-         Avatar Image: Changes the image used for the avatar
-         Add your avatar image into the /theme-customizations 
-         folder and then change the following path to...
-         ./theme-customizations/[your filename].[ext]
-         You can also make the avatar dynamic based on the system 
-         create an image for each system and set a path like this...
-         ./theme-customizations/avatars/${system.theme}.[ext]
+         Avatar Image: 
+         - Changes the image used for the avatar
+         - Add your avatar image into the /theme-customizations 
+           folder and then change the following path to...
+           ./theme-customizations/[your filename].[ext]
+         - You can also make the avatar dynamic based on the system 
+           create an image for each system and set a path like this...
+           ./theme-customizations/avatars/${system.theme}.[ext]
          -->
          <avatarImage>./_inc/images/avatar-default.png</avatarImage>
          <!-- 
-         Menu Bar: Settings to change the colors of the menu bar
+         Menu Bar: 
+         - Settings to change the colors of the menu bar
          -->
          <menuBarColor>000000</menuBarColor>
          <menuBarShadowColor>000000aa</menuBarShadowColor>
@@ -30,12 +32,43 @@
          System View
          ///
          -->
+         <!-- 
+         Carousel Image:
+         - This is the top image layer
+         - Path sets the path to look for carousel images
+         - Color sets the default color for the images in the carousel. ffffff means display the original 
+           color of the image.  you can also use this to to hide the carousel image by setting it to 00000000
+         - Size sets the size that the carousel image will display at
+         -->
          <carouselImagePath>./_inc/systems/controllers/${system.theme}.png</carouselImagePath>
          <carouselImageColor>ffffff</carouselImageColor>
          <carouselImageSize>0.55 0.65</carouselImageSize>
+         <!-- 
+         Game Image:
+         - This is the middle image layer
+         - Type sets the type of game image to pull in (I would suggest either screenshot or fanart)
+         - Color sets the default color for the game image.  ffffff means display the original 
+           color of the image.  you can also use this to to hide the game image by setting it to 00000000
+         - Saturation sets the amount of color that will display for the game image.
+           1 is full color / 0 is grayscale
+         -->
          <gameImageType>screenshot</gameImageType>
-         <gameImageColor>ffffff00</gameImageColor>
+         <gameImageColor>ffffff33</gameImageColor>
          <gameImageSaturation>0</gameImageSaturation>
+         <!-- 
+         Static Image:
+         - This is the bottom image layer
+         - Path sets the path to look for static images.  You can do things like add a single image that
+           displays for all systems, use a variable to dynamically change the image based on system (using a 
+           variable like ${system.theme}) or set a spacer image using the variable ${spacerImage} and tile 
+           it using the tile setting below to set solid colors.
+         - Color sets the default color for the static image.  you can use variables here like 
+           ${systemColor} to display dynamic color based on system.  you can also use this to to hide 
+           the static image by setting it to 00000000
+         - Tile sets if the static image should be tiled or not.  If you are using ${spacerImage} varaible
+           for the path then I would recommend setting this to true.  If you are using a full size image then 
+           I would recommend setting this to false.
+         -->
          <staticImagePath>${spacerImage}</staticImagePath>
          <staticImageColor>${systemColor}</staticImageColor>
          <staticImageTile>true</staticImageTile>
@@ -46,9 +79,10 @@
          ///
          -->
          <!-- 
-         Selector Color: Changes the color used for the grid selector
-         Change ffffff to any hex value you prefer to change the color
-         If you to remove the selector entirely set it to 00000000 
+         Selector Color: 
+         - Changes the color used for the grid selector
+         - Change ffffff to any hex value you prefer to change the color
+         - If you to remove the selector entirely set it to 00000000 
          -->
          <selectorColor>ffffff</selectorColor>
 
