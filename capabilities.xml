@@ -23,6 +23,12 @@
    <colorScheme name="colorful-screenshots">
       <label>Default [Colorful + Screenshots]</label>
    </colorScheme>
+   <colorScheme name="logos-screenshots">
+      <label>Default [Logos + Screenshots]</label>
+   </colorScheme>
+   <colorScheme name="logos-fanart">
+      <label>Default [Logos + Fanart]</label>
+   </colorScheme>
    <colorScheme name="screenshots">
       <label>Default [Screenshots]</label>
    </colorScheme>

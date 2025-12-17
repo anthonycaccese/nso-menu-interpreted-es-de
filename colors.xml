@@ -135,6 +135,74 @@
          <selectorColor>ffffff</selectorColor>
       </variables>
    </colorScheme>
+   <colorScheme name="logos-screenshots">
+      <variables>
+         <!--
+         ///
+         All Views
+         ///
+         -->
+         <avatarImage>./_inc/images/avatar-default.png</avatarImage>
+         <menuBarColor>000000</menuBarColor>
+         <menuBarShadowColor>000000aa</menuBarShadowColor>
+         <menuBarPrimaryTextColor>ffffff</menuBarPrimaryTextColor>
+         <menuBarSecondaryTextColor>777777</menuBarSecondaryTextColor>
+         <!--
+         ///
+         System View
+         ///
+         -->
+         <carouselImagePath>./_inc/systems/logos/${system.theme}.svg</carouselImagePath>
+         <carouselImageColor>ffffff</carouselImageColor>
+         <carouselImageSize>0.5 0.4</carouselImageSize>
+         <gameImageType>screenshot</gameImageType>
+         <gameImageColor>ffffff33</gameImageColor>
+         <gameImageSaturation>0</gameImageSaturation>
+         <staticImagePath>${spacerImage}</staticImagePath>
+         <staticImageColor>${systemColor}33</staticImageColor>
+         <staticImageTile>true</staticImageTile>
+         <!--
+         ///
+         Gamelist View
+         ///
+         -->
+         <selectorColor>ffffff</selectorColor>
+      </variables>
+   </colorScheme>
+   <colorScheme name="logos-fanart">
+      <variables>
+         <!--
+         ///
+         All Views
+         ///
+         -->
+         <avatarImage>./_inc/images/avatar-default.png</avatarImage>
+         <menuBarColor>000000</menuBarColor>
+         <menuBarShadowColor>000000aa</menuBarShadowColor>
+         <menuBarPrimaryTextColor>ffffff</menuBarPrimaryTextColor>
+         <menuBarSecondaryTextColor>777777</menuBarSecondaryTextColor>
+         <!--
+         ///
+         System View
+         ///
+         -->
+         <carouselImagePath>./_inc/systems/logos/${system.theme}.svg</carouselImagePath>
+         <carouselImageColor>ffffff</carouselImageColor>
+         <carouselImageSize>0.5 0.4</carouselImageSize>
+         <gameImageType>fanart</gameImageType>
+         <gameImageColor>ffffff33</gameImageColor>
+         <gameImageSaturation>0</gameImageSaturation>
+         <staticImagePath>${spacerImage}</staticImagePath>
+         <staticImageColor>${systemColor}33</staticImageColor>
+         <staticImageTile>true</staticImageTile>
+         <!--
+         ///
+         Gamelist View
+         ///
+         -->
+         <selectorColor>ffffff</selectorColor>
+      </variables>
+   </colorScheme>
    <colorScheme name="screenshots">
       <variables>
          <!--
