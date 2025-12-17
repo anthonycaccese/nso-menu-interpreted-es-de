@@ -18,12 +18,25 @@ This theme was created in collaboration with [@rogs123](https://github.com/rogs1
 - The theme has a simple set of options that can be changed directly from the UI Settings menu of ES-DE 
 - `Theme Aspect Ratio` - sets the aspect ratio the theme will render at. If needed, this should be changed to match the aspect ratio of your screen.
    - 16:9, 16:10, 8:7, 1:1 and 4:3 aspect ratios are supported
-- `Theme Variant` - sets the layout used for the system view.  There are 4 variants to choose from:
-   - Controller Images
-   - Colorful Images
-   - Controller Images + Screenshot
-   - Colorful Images + Screenshot
-   - Custom Images
+- `Color Scheme` - sets the images displayed on system view and colors like the menu bar background and grid selector. There are a few built in options and a custom option which allows you to set your own values for some properties.  Instructions for using custom are in the `Customizations` section below.
+
+## Customizations
+
+A custom color scheme lets you modify some theme options while also allowing you to continue to get updates from the theme downloader.
+
+1. In the resources folder you will find a template file called `customizations.xml`
+
+2. Make a folder named theme-customizations and place a copy of the customizations.xml file inside that folder. The folder structure should look like this when you are done:
+
+`/ES-DE/themes/nso-menu-interpreted-es-de/theme-customizations/customizations.xml`
+
+For the Android theme downloader version this would be:
+
+`/Android/data/org.es_de.frontend/files/themes/nso-menu-interpreted-es-de/theme-customizations/customizations.xml`
+
+3. Edit the properties in customizations.xml to make theme customizations. There are comments within the template that explain each property. If you have questions just ask.
+
+4. Set the Theme Color Scheme in ES-DE's UI Settings menu to `Custom` and you should see your customizations. If you see an error check that the paths discussed above are correct and then check that the values you added for each property are correct and well formatted.
 
 ## **Acknowledgments**
 

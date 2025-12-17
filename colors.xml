@@ -189,7 +189,7 @@
          <carouselImagePath>./_inc/systems/logos/${system.theme}.svg</carouselImagePath>
          <carouselImageColor>ffffff</carouselImageColor>
          <carouselImageSize>0.5 0.4</carouselImageSize>
-         <gameImageType>fanart</gameImageType>
+         <gameImageType>fanart,screenshot</gameImageType>
          <gameImageColor>ffffff33</gameImageColor>
          <gameImageSaturation>0</gameImageSaturation>
          <staticImagePath>${spacerImage}</staticImagePath>
