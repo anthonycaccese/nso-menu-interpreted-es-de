@@ -242,7 +242,22 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    Gamelist View
    ///
    -->
-   <include>./_inc/systems/coversize/${systemCoverSize}.xml</include>
+   <variant name="gamelist-grid-default-cover">
+      <include>./_inc/systems/coversize/${systemCoverSize}.xml</include>
+      <view name="gamelist">
+         <grid name="grid">
+            <selectorImage>./_inc/systems/coversize/${systemCoverSize}.svg</selectorImage>
+         </grid>
+      </view>
+   </variant>
+   <variant name="gamelist-grid-steamgriddb-vertical-cover">
+      <include>./_inc/systems/coversize/2-3.xml</include>
+      <view name="gamelist">
+         <grid name="grid">
+            <selectorImage>./_inc/systems/coversize/2-3.svg</selectorImage>
+         </grid>
+      </view>
+   </variant>
    <view name="gamelist">
       <image name="background">
          <color>111111</color>

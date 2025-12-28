@@ -55,4 +55,20 @@
       <entry>builtin-fade</entry>
    </suppressTransitionProfiles>
 
+   <!--
+   ///
+   Grid Variants
+   ///
+   -->
+   <!-- Grid: Default Covers -->
+   <variant name="gamelist-grid-default-cover">
+      <label>Grid: Default Covers</label>
+      <selectable>true</selectable>
+   </variant>
+   <!-- Grid: SteamGridDB Vertical -->
+   <variant name="gamelist-grid-steamgriddb-vertical-cover">
+      <label>Grid: SteamGridDB Covers (Vertical)</label>
+      <selectable>true</selectable>
+   </variant>
+
 </themeCapabilities>
