@@ -6,7 +6,9 @@
          All Views
          ///
          -->
-         <avatarImage>./_inc/images/avatar-default.png</avatarImage>
+         <avatarImage>./theme-customizations/profile.jpg</avatarImage>
+         <avatarBorderShadowColor>000000</avatarBorderShadowColor>
+         <avatarBorderColor>bbbbbb</avatarBorderColor>
          <menuBarColor>000000</menuBarColor>
          <menuBarShadowColor>000000aa</menuBarShadowColor>
          <menuBarPrimaryTextColor>ffffff</menuBarPrimaryTextColor>
@@ -41,6 +43,8 @@
          ///
          -->
          <avatarImage>./_inc/images/avatar-default.png</avatarImage>
+         <avatarBorderShadowColor>000000</avatarBorderShadowColor>
+         <avatarBorderColor>bbbbbb</avatarBorderColor>
          <menuBarColor>000000</menuBarColor>
          <menuBarShadowColor>000000aa</menuBarShadowColor>
          <menuBarPrimaryTextColor>ffffff</menuBarPrimaryTextColor>
@@ -75,6 +79,8 @@
          ///
          -->
          <avatarImage>./_inc/images/avatar-default.png</avatarImage>
+         <avatarBorderShadowColor>000000</avatarBorderShadowColor>
+         <avatarBorderColor>bbbbbb</avatarBorderColor>
          <menuBarColor>000000</menuBarColor>
          <menuBarShadowColor>000000aa</menuBarShadowColor>
          <menuBarPrimaryTextColor>ffffff</menuBarPrimaryTextColor>
@@ -109,6 +115,8 @@
          ///
          -->
          <avatarImage>./_inc/images/avatar-default.png</avatarImage>
+         <avatarBorderShadowColor>000000</avatarBorderShadowColor>
+         <avatarBorderColor>bbbbbb</avatarBorderColor>
          <menuBarColor>000000</menuBarColor>
          <menuBarShadowColor>000000aa</menuBarShadowColor>
          <menuBarPrimaryTextColor>ffffff</menuBarPrimaryTextColor>
@@ -143,6 +151,8 @@
          ///
          -->
          <avatarImage>./_inc/images/avatar-default.png</avatarImage>
+         <avatarBorderShadowColor>000000</avatarBorderShadowColor>
+         <avatarBorderColor>bbbbbb</avatarBorderColor>
          <menuBarColor>000000</menuBarColor>
          <menuBarShadowColor>000000aa</menuBarShadowColor>
          <menuBarPrimaryTextColor>ffffff</menuBarPrimaryTextColor>
@@ -177,6 +187,8 @@
          ///
          -->
          <avatarImage>./_inc/images/avatar-default.png</avatarImage>
+         <avatarBorderShadowColor>000000</avatarBorderShadowColor>
+         <avatarBorderColor>bbbbbb</avatarBorderColor>
          <menuBarColor>000000</menuBarColor>
          <menuBarShadowColor>000000aa</menuBarShadowColor>
          <menuBarPrimaryTextColor>ffffff</menuBarPrimaryTextColor>
@@ -211,6 +223,8 @@
          ///
          -->
          <avatarImage>./_inc/images/avatar-default.png</avatarImage>
+         <avatarBorderShadowColor>000000</avatarBorderShadowColor>
+         <avatarBorderColor>bbbbbb</avatarBorderColor>
          <menuBarColor>000000</menuBarColor>
          <menuBarShadowColor>000000aa</menuBarShadowColor>
          <menuBarPrimaryTextColor>ffffff</menuBarPrimaryTextColor>
@@ -245,6 +259,8 @@
          ///
          -->
          <avatarImage>./_inc/images/avatar-default.png</avatarImage>
+         <avatarBorderShadowColor>000000</avatarBorderShadowColor>
+         <avatarBorderColor>bbbbbb</avatarBorderColor>
          <menuBarColor>000000</menuBarColor>
          <menuBarShadowColor>000000aa</menuBarShadowColor>
          <menuBarPrimaryTextColor>ffffff</menuBarPrimaryTextColor>

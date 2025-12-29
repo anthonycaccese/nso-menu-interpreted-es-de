@@ -18,6 +18,8 @@
            ./theme-customizations/avatars/${system.theme}.[ext]
          -->
          <avatarImage>./_inc/images/avatar-default.png</avatarImage>
+         <avatarBorderShadowColor>000000</avatarBorderShadowColor>
+         <avatarBorderColor>cccccc</avatarBorderColor>
          <!-- 
          Menu Bar: 
          - Settings to change the colors of the menu bar

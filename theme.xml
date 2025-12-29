@@ -96,15 +96,22 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <zIndex>60</zIndex>
          <stationary>withinView</stationary>
       </image>
+      <image name="avatar-border-shadow">
+         <path>./_inc/images/avatar-border-shadow.svg</path>
+         <color>${avatarBorderShadowColor}</color>
+         <zIndex>70</zIndex>
+         <stationary>withinView</stationary>
+      </image>
       <image name="avatar-mask">
          <path>./_inc/images/avatar-mask.svg</path>
          <color>${menuBarColor}</color>
-         <zIndex>70</zIndex>
+         <zIndex>80</zIndex>
          <stationary>withinView</stationary>
       </image>
       <image name="avatar-border">
          <path>./_inc/images/avatar-border.svg</path>
-         <zIndex>80</zIndex>
+         <color>${avatarBorderColor}</color>
+         <zIndex>90</zIndex>
          <stationary>withinView</stationary>
       </image>
       <text name="menu-title-system,custom-collection-name,game-count">
@@ -198,7 +205,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <fastScrolling>true</fastScrolling>
          <zIndex>3</zIndex>
       </carousel>
-      <image name="avatar-mask,avatar-border">
+      <image name="avatar-mask,avatar-border,avatar-border-shadow">
          <origin>0 1</origin>
          <pos>0 1</pos>
       </image>
@@ -270,7 +277,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <origin>0 0</origin>
          <pos>${menuBarGamelistShadowPos}</pos>
       </image>
-      <image name="avatar-image,avatar-mask,avatar-border">
+      <image name="avatar-image,avatar-mask,avatar-border,avatar-border-shadow">
          <origin>0 0</origin>
          <pos>0 0</pos>
       </image>
@@ -340,7 +347,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    -->
    <aspectRatio name="16:9">
       <view name="system,gamelist">
-         <image name="avatar-mask,avatar-border">
+         <image name="avatar-mask,avatar-border,avatar-border-shadow">
             <size>${avatarMaskSize}</size>
          </image>
          <image name="avatar-image">
@@ -428,7 +435,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    -->
    <aspectRatio name="16:10">
       <view name="system,gamelist">
-         <image name="avatar-mask,avatar-border">
+         <image name="avatar-mask,avatar-border,avatar-border-shadow">
             <size>${avatarMaskSize}</size>
          </image>
          <image name="avatar-image">
@@ -516,7 +523,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    -->
    <aspectRatio name="4:3">
       <view name="system,gamelist">
-         <image name="avatar-mask,avatar-border">
+         <image name="avatar-mask,avatar-border,avatar-border-shadow">
             <size>${avatarMaskSize}</size>
          </image>
          <image name="avatar-image">
@@ -604,7 +611,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    -->
    <aspectRatio name="8:7">
       <view name="system,gamelist">
-         <image name="avatar-mask,avatar-border">
+         <image name="avatar-mask,avatar-border,avatar-border-shadow">
             <size>${avatarMaskSize}</size>
          </image>
          <image name="avatar-image">
@@ -692,7 +699,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    -->
    <aspectRatio name="1:1">
       <view name="system,gamelist">
-         <image name="avatar-mask,avatar-border">
+         <image name="avatar-mask,avatar-border,avatar-border-shadow">
             <size>${avatarMaskSize}</size>
          </image>
          <image name="avatar-image">
