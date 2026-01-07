@@ -6,7 +6,7 @@
          All Views
          ///
          -->
-         <avatarImage>./theme-customizations/profile.jpg</avatarImage>
+         <avatarImage>./_inc/images/avatar-default.png</avatarImage>
          <avatarBorderShadowColor>000000</avatarBorderShadowColor>
          <avatarBorderColor>bbbbbb</avatarBorderColor>
          <menuBarColor>000000</menuBarColor>

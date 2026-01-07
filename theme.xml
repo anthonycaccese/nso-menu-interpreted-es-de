@@ -249,7 +249,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    Gamelist View
    ///
    -->
-   <variant name="gamelist-grid-default-cover">
+   <variant name="gamelist-grid-cover">
       <include>./_inc/systems/coversize/${systemCoverSize}.xml</include>
       <view name="gamelist">
          <grid name="grid">
@@ -257,7 +257,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          </grid>
       </view>
    </variant>
-   <variant name="gamelist-grid-steamgriddb-vertical-cover">
+   <variant name="gamelist-grid-cover-steamgriddb">
       <include>./_inc/systems/coversize/2-3.xml</include>
       <view name="gamelist">
          <grid name="grid">
